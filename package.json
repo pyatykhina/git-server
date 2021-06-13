@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node src/server",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "prepare": "husky install"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -19,7 +18,10 @@
   },
   "homepage": "https://github.com/tanyapyat/git-server#readme",
   "devDependencies": {
+    "axios": "^0.21.1",
     "express": "^4.17.1",
-    "http-proxy-middleware": "^2.0.0"
+    "fs": "0.0.1-security",
+    "http-proxy-middleware": "^2.0.0",
+    "util": "^0.12.4"
   }
 }
