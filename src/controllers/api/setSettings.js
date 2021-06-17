@@ -9,7 +9,7 @@ module.exports = async (req, res) => {
         period: req.body.period
     };
 
-    exec(`git clone ${config.repoName}`);
+    exec(`git clone ${config.repoName} local-repo`);
 
     await api.setSettings(config)
         .then(() => {
@@ -17,8 +17,8 @@ module.exports = async (req, res) => {
         })
         .catch(error => {
             return res.status(error.response.status).json({ 
-                    error: error.response.statusText 
-                })
+                error: error.response.statusText 
+            })
         });
 };
   

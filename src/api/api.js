@@ -19,6 +19,12 @@ module.exports = {
             .then(response => response);
     },
 
+    addBuildToQueue(config) {
+        return axiosInstance()
+            .post('/build/request', config)
+            .then(response => response);
+    },
+
     getBuild(buildId) {
         return axiosInstance()
             .get(`/build/details/${buildId}`)
