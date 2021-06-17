@@ -1,6 +1,6 @@
 const { EventEmitter } = require('events');
 const { existsSync } = require('fs');
-const { dbDumpFile } = require('./config');
+const { dbDumpFile } = require('../config');
 const { writeFile } = require('../utils/fs');
 const { prettifyJsonToString } = require('../utils/prettifyJsonToString');
 
@@ -13,6 +13,11 @@ class Database extends EventEmitter {
     if (!existsSync(dbDumpFile)) {
       return;
     }
+  }
+
+  async insert(settings, config) {
+    await settings.saveSettings(config);
+    this.emit('saved');
   }
 }
 
