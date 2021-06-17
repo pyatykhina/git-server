@@ -17,5 +17,11 @@ module.exports = {
         return axiosInstance()
             .get('/build/list')
             .then(response => response);
+    },
+
+    getBuild(buildId) {
+        return axiosInstance()
+            .get('/build/details', buildId)
+            .then(response => response);
     }
 }
