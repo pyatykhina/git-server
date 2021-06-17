@@ -15,8 +15,13 @@ class Database extends EventEmitter {
     }
   }
 
-  async insert(settings, config) {
+  async insertSettings(settings, config) {
     await settings.saveSettings(config);
+    this.emit('saved');
+  }
+
+  async insertBuild(build, config) {
+    await build.saveBuild(config);
     this.emit('saved');
   }
 }

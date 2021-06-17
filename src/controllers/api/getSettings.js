@@ -6,7 +6,7 @@ module.exports = async (req, res) => {
     await api.getSettings()
         .then(async response => {
             const settingsFile = new Settings();
-            await db.insert(settingsFile, JSON.stringify(response.data.data));
+            await db.insertSettings(settingsFile, JSON.stringify(response.data.data));
 
             return res.status(200).json({ 
                 settings: response.data 
