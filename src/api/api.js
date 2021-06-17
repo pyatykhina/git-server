@@ -21,7 +21,13 @@ module.exports = {
 
     getBuild(buildId) {
         return axiosInstance()
-            .get('/build/details', buildId)
+            .get(`/build/details/${buildId}`)
+            .then(response => response);
+    },
+
+    getLogs(buildId) {
+        return axiosInstance()
+            .get(`/build/log/${buildId}`)
             .then(response => response);
     }
 }
