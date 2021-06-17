@@ -3,7 +3,7 @@ const api = require('../../api/api');
 module.exports = async (req, res) => {
     await api.getAllBuilds()
         .then(response => {
-            return response.status(200).json({ 
+            return res.status(200).json({ 
                 allBuilds: response.data 
             })
         })
