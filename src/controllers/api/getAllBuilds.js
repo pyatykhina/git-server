@@ -6,7 +6,7 @@ module.exports = async (req, res) => {
     await api.getAllBuilds()
         .then(response => {
             response.data.data.forEach(async item => {
-                const buildsFile = new Builds();
+                const buildsFile = new Builds(item);
                 await db.insertBuild(buildsFile, JSON.stringify(item));
             });
 

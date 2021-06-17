@@ -4,7 +4,9 @@ const { buildsFolder } = require('../config');
 const { writeFile } = require('../utils/fs');
 
 module.exports = class Build {
-  constructor(buildNumber, commitHash, commitMessage, authorName, dateTime, durationTime) {
+  constructor(build) {
+    const { buildNumber, commitHash, commitMessage, authorName, dateTime, durationTime } = build;
+
     this.buildNumber = buildNumber || null;
     this.commitHash = commitHash || "";
     this.commitMessage = commitMessage || "";
