@@ -10,7 +10,7 @@ class Database extends EventEmitter {
   }
 
   async initFromDump() {
-    if (existsSync(dbDumpFile) === false) {
+    if (!existsSync(dbDumpFile)) {
       return;
     }
   }

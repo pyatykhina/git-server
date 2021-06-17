@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node src/server",
+    "start": "nodemon src/server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -22,6 +22,7 @@
     "express": "^4.17.1",
     "fs": "0.0.1-security",
     "http-proxy-middleware": "^2.0.0",
+    "nodemon": "^2.0.7",
     "util": "^0.12.4"
   }
 }

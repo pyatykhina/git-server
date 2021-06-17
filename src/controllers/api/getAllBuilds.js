@@ -1,7 +1,15 @@
 const api = require('../../api/api');
 
 module.exports = async (req, res) => {
-    const allBuilds = await api.getAllBuilds();
-    console.log('allBuilds', allBuilds)
-    return res.json({ allBuilds: allBuilds });
+    await api.getAllBuilds()
+        .then(response => {
+            return response.status(200).json({ 
+                allBuilds: response.data 
+            })
+        })
+        .catch(error => {
+            return res.status(error.response.status).json({ 
+                    error: error.response.statusText 
+                })
+        });
 };

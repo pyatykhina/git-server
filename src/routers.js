@@ -7,12 +7,12 @@ const ping = require('./controllers/ping');
 
 const apiRouter = new express.Router();
 
-apiRouter.get('/api/settings', api.getSettings);
-apiRouter.post('/api/settings', api.setSettings);
-apiRouter.get('/api/builds', api.getAllBuilds);
-apiRouter.post('/api/builds/:commitHash', api.addBuildToQueue);
-apiRouter.get('/api/builds/:buildId', api.getBuild);
-apiRouter.get('/api/builds/:buildId/logs', api.getLogs);
+apiRouter.get('/settings', api.getSettings);
+apiRouter.post('/settings', api.setSettings);
+apiRouter.get('/builds', api.getAllBuilds);
+apiRouter.post('/builds/:commitHash', api.addBuildToQueue);
+apiRouter.get('/builds/:buildId', api.getBuild);
+apiRouter.get('/builds/:buildId/logs', api.getLogs);
 
 exports.apiRouter = apiRouter;
 

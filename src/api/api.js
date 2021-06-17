@@ -1,15 +1,9 @@
-const axiosAPI = require("./axiousInstance");
+const axiosInstance = require('./axiousInstance');
 
 module.exports = {
-    async getAllBuilds() {
-        const axiosInstance = await axiosAPI();
-        return axiosInstance
-            .get("/build/list")
-            .then(response => {
-                if (response.status === 200) {
-                    return response.data;
-                }
-            })
-            .catch(() => []);
+    getAllBuilds() {
+        return axiosInstance()
+            .get('/build/list')
+            .then(response => response);
     }
 }
