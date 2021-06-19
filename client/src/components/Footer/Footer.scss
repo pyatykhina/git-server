@@ -1,0 +1,32 @@
+$background: #F0F2F3;
+$text: #7F8285;
+$text-hover: #E00000;
+
+footer {
+    flex: 0 0 auto;
+    background-color: $background;
+}
+
+.footer {
+    max-width: 824px;
+    margin: auto;
+    padding: 8px 0;
+    display: flex;
+    justify-content: space-between;
+
+    &__nav {
+        &-item {
+            margin-right: 12px;
+            color: $text;
+            text-decoration: none;
+
+            &:hover {
+                color: $text-hover;
+            }
+        }
+    }
+
+    &__copyright {
+        color: $text;
+    }
+}
