@@ -1,0 +1,29 @@
+@import "../../variables";
+
+button {
+    padding: 14px 18px;
+    border: 2px solid transparent;
+    border-radius: 4px;
+    
+    background-color: $yellow;
+
+    &:hover {
+        background-color: $yellow-hovered;
+    }
+
+    &:focus {
+        border: 2px solid $yellow-border;
+    }
+}
+
+.secondary {
+    background-color: $grey;
+
+    &:hover {
+        background-color: $grey-hovered;
+    }
+
+    &:focus {
+        border: 2px solid $grey-border;
+    }
+}

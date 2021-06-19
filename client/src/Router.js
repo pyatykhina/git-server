@@ -5,7 +5,7 @@ import Details from "./pages/Details";
 import History from "./pages/History";
 import Settings from "./pages/Settings";
 
-const  Router = (props) => {
+function Router(props) {
   return (
     <BrowserRouter>
       <Switch>
