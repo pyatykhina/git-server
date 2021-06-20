@@ -35,6 +35,14 @@ main {
   width: 824px;
   max-width: 100vw;
   margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .logo {

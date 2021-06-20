@@ -1,0 +1,12 @@
+.start {
+    text-align: center;
+    margin: auto;
+
+    &__subtitle {
+        font-weight: 400;
+        width: 55%;
+        margin: auto;
+        margin-top: 32px;
+        margin-bottom: 24px;
+    }
+}

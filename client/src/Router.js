@@ -4,6 +4,7 @@ import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom";
 import Details from "./pages/Details";
 import History from "./pages/History";
 import Settings from "./pages/Settings";
+import Start from "./pages/Start";
 import Footer from "./components/Footer";
 
 function Router(props) {
@@ -14,7 +15,7 @@ function Router(props) {
             <Switch>
               <Route path="/" exact component={History} />
               <Route path="/build/:number" component={Details} />
-              <Route path="/settings" component={Settings} />
+              <Route path="/settings" component={Start} />
               <Redirect from='*' to='/' />
             </Switch>
         </main>
