@@ -15,8 +15,12 @@ $text: #7F8285;
 
     &__inputs {
         &-buttons {
-            display: block;
+            display: flex;
             margin-top: 12px;
+
+            &-button {
+                margin-right: 8px;
+            }
         }
     }
 }

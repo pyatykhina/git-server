@@ -35,6 +35,10 @@ $placeholder: #CCCCCC;
         border-radius: 4px;
         outline: none;
 
+        &-error {
+            border: 2px solid $red;
+        }
+
         &-inline {
             margin-right: 8px;
             width: 52px;

@@ -15,7 +15,7 @@ function Router(props) {
             <Switch>
               <Route path="/" exact component={History} />
               <Route path="/build/:number" component={Details} />
-              <Route path="/settings" component={Start} />
+              <Route path="/settings" component={Settings} />
               <Redirect from='*' to='/' />
             </Switch>
         </main>
