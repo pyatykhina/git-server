@@ -17,7 +17,8 @@ function Details(props) {
                     <Link to="/settings"><IconButton icon="settings" /></Link>
                 </div>
             </header>
-            <Link to="/"><Build /></Link>
+            <Link to="/"><Build variant="opened" /></Link>
+            <iframe className="logs"></iframe>
         </>
     )
 }
