@@ -5,9 +5,9 @@ import settings from "../../assets/images/settings.svg";
 import run from "../../assets/images/run.svg";
 import rebuild from "../../assets/images/rebuild.svg";
 
-const IconButton = ({ title, icon }) => {
+const IconButton = ({ title, icon, ...props }) => {
     return (
-        <button className="iconbutton" >
+        <button className="iconbutton" {...props}>
             <img alt={icon} src={
                 icon === "settings" 
                     ? settings 

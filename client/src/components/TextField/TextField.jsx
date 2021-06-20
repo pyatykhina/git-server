@@ -24,7 +24,7 @@ const TextField = ({ label, placeholder, required, variant, ...props }) => {
     return (
         <div className={`textfield ${variant === "inline" && "textfield-inline"}`}>
             <label htmlFor={label || placeholder} className={`textfield__label ${variant === "inline" && "textfield__label-inline"}`}>
-                {label || placeholder}
+                {label}
                 {required && <span className="textfield__label-required"> *</span>}
             </label>
             <input 
