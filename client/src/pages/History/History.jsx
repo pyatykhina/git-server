@@ -1,15 +1,20 @@
 import React from "react";
 import "./History.scss";
 
-import Button from "../../components/Button";
-import TextField from "../../components/TextField";
+import IconButton from "../../components/IconButton";
+import Build from "../../components/Build";
 
 function History() {
     return (
         <>
-            <div>History</div>
-            <Button title="Button" />
-            <TextField label="Text Field" />
+            <header>
+                <div className="logo">
+                    philip1967/my-awesome-repo
+                </div>
+                <IconButton icon="run" title="Run build" />
+                <IconButton icon="settings" />
+            </header>
+            <Build />
         </>
     )
 }

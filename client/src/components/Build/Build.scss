@@ -1,0 +1,62 @@
+$green: #00B341;
+$yellow: #FF9A00;
+$red: #FF3333;
+$text: #595959;
+$icon: #B3B3B3;
+
+.build {
+    width: 100%;
+    padding: 12px 24px;
+    box-shadow: 0px 0px 1px rgba(67, 68, 69, 0.3), 0px 1px 1px rgba(67, 68, 69, 0.3);
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+
+    &-line {
+        display: flex;
+        align-items: center;
+
+        &:first-child {
+            margin-bottom: 8px;
+        }
+    }
+
+    &-info {
+        display: flex;
+    }
+
+    &-status {
+        margin-right: 8px;
+    }
+
+    &__number {
+        font-weight: 500;
+        font-size: 18px;
+        margin-right: 4px;
+        color: $green;
+    }
+
+    &__title {
+        font-size: 15px;
+    }
+
+    &__branch {
+        margin-right: 4px;
+    }
+
+    &__hash {
+        margin-right: 8px;
+        color: $text;
+    }
+
+    &__icon {
+        margin-right: 4px;
+        color: $icon;
+    }
+
+    &__time {
+        color: $text;
+    }
+}
