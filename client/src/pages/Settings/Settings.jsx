@@ -8,7 +8,7 @@ function Settings() {
     return (
         <>
             <header>
-                <div className="logo">
+                <div className="logo-light">
                     School CI server
                 </div>
             </header>

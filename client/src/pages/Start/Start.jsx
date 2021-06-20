@@ -9,7 +9,7 @@ function Start() {
     return (
         <>
             <header>
-                <div className="logo">
+                <div className="logo-light">
                     School CI server
                 </div>
                 <IconButton title="Settings" icon="settings" />
