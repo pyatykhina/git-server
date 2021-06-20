@@ -6,10 +6,11 @@ $grey: #E6E6E6;
 $grey-hovered: #DBDBDB;
 $grey-border: #B3B3B3;
 
-button {
+.button {
     padding: 8px 18px 9px 18px;
     border: 2px solid transparent;
     border-radius: 4px;
+    margin-right: 8px;
     
     background-color: $yellow;
 

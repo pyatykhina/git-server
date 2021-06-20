@@ -20,6 +20,11 @@ code {
     monospace;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
 .wrapper {
   display: flex;
   flex-direction: column;
@@ -27,4 +32,15 @@ code {
 
 main {
   flex: 1 0 auto;
+  width: 824px;
+  max-width: 100vw;
+  margin: auto;
+}
+
+.logo {
+    color: #7F8285;
+    font-size: 24px;
+    padding: 10px 0;
+    font-weight: 500;
+    margin-bottom: 8px;
 }

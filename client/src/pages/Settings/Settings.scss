@@ -1,0 +1,22 @@
+$text: #7F8285;
+
+.form {
+    &__title {
+        font-size: 15px;
+        font-weight: 700;
+        margin-bottom: 8px;
+    }
+
+    &__subtitle {
+        font-weight: 400;
+        color: $text;
+        margin-bottom: 12px;
+    }
+
+    &__inputs {
+        &-buttons {
+            display: block;
+            margin-top: 12px;
+        }
+    }
+}
