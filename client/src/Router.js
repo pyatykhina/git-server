@@ -8,12 +8,18 @@ import Start from "./pages/Start";
 import Footer from "./components/Footer";
 
 function Router(props) {
+  const repository = {};
+
   return (
     <BrowserRouter>
       <div className="wrapper">
         <main>
             <Switch>
-              <Route path="/" exact component={History} />
+              {
+                repository 
+                  ? <Route path="/" exact component={History} />
+                  : <Route path="/" exact component={Start} />
+              }
               <Route path="/build/:number" component={Details} />
               <Route path="/settings" component={Settings} />
               <Redirect from='*' to='/' />

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./History.scss";
 
 import IconButton from "../../components/IconButton";
@@ -13,10 +14,12 @@ function History() {
                 </div>
                 <div className="header-buttons">
                     <div className="header-button"><IconButton icon="run" title="Run build" /></div>
-                    <IconButton icon="settings" />
+                    <Link to="/settings"><IconButton icon="settings" /></Link>
                 </div>
             </header>
-            <Build />
+            <Link to="/build/0"><Build /></Link>
+            <Link to="/build/0"><Build /></Link>
+            <Link to="/build/0"><Build /></Link>
         </>
     )
 }

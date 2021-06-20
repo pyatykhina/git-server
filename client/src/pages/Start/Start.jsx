@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Start.scss";
 
 import Button from "../../components/Button";
@@ -12,12 +13,12 @@ function Start() {
                 <div className="logo-light">
                     School CI server
                 </div>
-                <IconButton title="Settings" icon="settings" />
+                <Link to="/settings"><IconButton title="Settings" icon="settings" /></Link>
             </header>
             <div className="start">
                 <img alt="start" src={start} className="start__image" />
                 <h4 className="start__subtitle">Configure repository connection and synchronization settings</h4>
-                <Button title="Open settings" />
+                <Link to="/settings"><Button title="Open settings" /></Link>
             </div>
         </>
     )

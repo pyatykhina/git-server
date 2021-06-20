@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Settings.scss";
 
 import TextField from "../../components/TextField";
@@ -31,7 +32,7 @@ function Settings() {
 
                     <div className="form__inputs-buttons">
                         <div className="form__inputs-buttons-button"><Button title="Save" type="submit" /></div>
-                        <Button title="Cancel" variant="secondary" />
+                        <Link to="/"><Button title="Cancel" variant="secondary" /></Link>
                     </div>
                 </form>
             </div>

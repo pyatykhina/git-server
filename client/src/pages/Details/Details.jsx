@@ -1,7 +1,9 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Details.scss";
 
 import IconButton from "../../components/IconButton";
+import Build from "../../components/Build";
 
 function Details(props) {
     return (
@@ -12,10 +14,10 @@ function Details(props) {
                 </div>
                 <div className="header-buttons">
                     <div className="header-button"><IconButton icon="rebuild" title="Rebuild" /></div>
-                    <IconButton icon="settings" />
+                    <Link to="/settings"><IconButton icon="settings" /></Link>
                 </div>
             </header>
-            <div>Details {props.match.params.number}</div>
+            <Link to="/"><Build /></Link>
         </>
     )
 }
