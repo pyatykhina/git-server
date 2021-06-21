@@ -18,7 +18,7 @@ function Details(props) {
                 </div>
             </header>
             <Link to="/"><Build variant="opened" /></Link>
-            <iframe className="logs"></iframe>
+            <iframe className="logs" title="logs"></iframe>
         </>
     )
 }

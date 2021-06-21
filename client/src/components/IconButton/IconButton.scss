@@ -25,5 +25,9 @@ $icon: #111111;
     &__text {
         margin-left: 5px;
         margin-right: 5px;
+
+        @media screen and (min-width: 320px) {
+            display: none;
+        }
     }
 }
