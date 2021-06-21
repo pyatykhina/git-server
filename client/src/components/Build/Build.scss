@@ -19,7 +19,7 @@ $divider: #F0F2F3;
         display: flex;
         align-items: center;
 
-        @media screen and (min-width: 320px) {
+        @media screen and (max-width: 320px) {
             display: inline-flex;
             margin-bottom: 0 !important;
             margin-right: 8px;
@@ -36,6 +36,16 @@ $divider: #F0F2F3;
         &:first-child {
             margin-bottom: 8px;
         }
+
+        &-subline {
+            display: flex;
+
+            &-xs {
+                @media screen and (max-width: 320px) {
+                    margin-bottom: 8px;
+                }
+            }
+        }
     }
 
     &-info {
@@ -47,7 +57,7 @@ $divider: #F0F2F3;
             flex-direction: column;
         }
 
-        @media screen and (min-width: 320px) {
+        @media screen and (max-width: 320px) {
             flex-direction: column;
         }
     }
@@ -59,6 +69,14 @@ $divider: #F0F2F3;
         background-color: $divider;
         margin-top: 8px;
         margin-bottom: 8px;
+
+        &-constant {
+            display: none;
+
+            @media screen and (max-width: 320px) {
+                display: block;
+            }
+        }
     }
 
     &-status {
@@ -74,6 +92,11 @@ $divider: #F0F2F3;
 
     &__title {
         font-size: 15px;
+
+        @media screen and (max-width: 320px) {
+            margin-top: 8px;
+            margin-bottom: 8px;
+        }
     }
 
     &__branch {

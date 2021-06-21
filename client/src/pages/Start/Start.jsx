@@ -13,7 +13,9 @@ function Start() {
                 <div className="logo-light">
                     School CI server
                 </div>
-                <Link to="/settings"><IconButton title="Settings" icon="settings" /></Link>
+                <div className="header-buttons">
+                    <Link to="/settings"><IconButton title="Settings" icon="settings" /></Link>
+                </div>
             </header>
             <div className="start">
                 <img alt="start" src={start} className="start__image" />

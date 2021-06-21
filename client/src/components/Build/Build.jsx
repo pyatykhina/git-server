@@ -21,24 +21,33 @@ function Build({ variant }) {
                             <div className="build__title">add documentation for postgres scaler</div>
                         </div>
                         <div className="build-line">
-                            <img alt="branch" src={branch} className="build__icon" />
-                            <div className="build__branch">master</div>
-                            <div className="build__hash">9c9f0b9</div>
-                            <img alt="author" src={author} className="build__icon" />
-                            <div className="build__author">Philip Kirkorov</div>
+                            <div className="build-line-subline build-line-subline-xs">
+                                <img alt="branch" src={branch} className="build__icon" />
+                                <div className="build__branch">master</div>
+                                <div className="build__hash">9c9f0b9</div>
+                            </div>
+                            <div className="build-line-subline">
+                                <img alt="author" src={author} className="build__icon" />
+                                <div className="build__author">Philip Kirkorov</div>
+                            </div>
                         </div>
                     </div>
 
                     {variant === "opened" && <div className="build-divider"/>} 
+                    {<div className="build-divider build-divider-constant"/>} 
 
                     <div>
                         <div className={`build-line ${variant === "opened" && "build-line-opened"}`}>
-                            <img alt="calendar" src={calendar} className="build__icon" />
-                            <div className="build__time">21 янв, 03:06</div>
+                            <div className="build-line-subline">
+                                <img alt="calendar" src={calendar} className="build__icon" />
+                                <div className="build__time">21 янв, 03:06</div>
+                            </div>
                         </div>
                         <div className={`build-line ${variant === "opened" && "build-line-opened"}`}>
-                            <img alt="watch" src={watch} className="build__icon" />
-                            <div className="build__time">1 ч 20 мин</div>
+                            <div className="build-line-subline">
+                                <img alt="watch" src={watch} className="build__icon" />
+                                <div className="build__time">1 ч 20 мин</div>
+                            </div>
                         </div>
                     </div>
                 </span>
