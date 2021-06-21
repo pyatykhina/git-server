@@ -2,7 +2,7 @@ const api = require('../../api/api');
 const{ execSync } = require('child_process');
 
 module.exports = async (req, res) => {
-    const commitHash = req.originalUrl.split('/')[3];
+    const commitHash = req.params.commitHash;
 
     const commit = execSync(`
         cd local-repo
@@ -13,10 +13,10 @@ module.exports = async (req, res) => {
 
     const branch = execSync(`
         cd local-repo
-        git branch
+        git rev-parse --abbrev-ref HEAD 
     `, {
         encoding: 'utf8'
-    }).split('\n')[0].split(' ')[1];
+    }).split('\n')[0];
 
     const config = {
         commitMessage: commit[2],

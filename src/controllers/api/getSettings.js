@@ -1,5 +1,5 @@
 const api = require('../../api/api');
-const db = require('../../db/Database');
+const db = require('../../db/database');
 const Settings = require('../../db/Settings');
 
 module.exports = async (req, res) => {
