@@ -15,6 +15,13 @@ $divider: #F0F2F3;
     cursor: pointer;
     margin-bottom: 8px;
 
+    &-block {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
     &-line {
         display: flex;
         align-items: center;
@@ -67,7 +74,7 @@ $divider: #F0F2F3;
         width: 100%;
         height: 1px;
         background-color: $divider;
-        margin-top: 8px;
+        margin-top: 10px;
         margin-bottom: 8px;
 
         &-constant {
@@ -115,5 +122,9 @@ $divider: #F0F2F3;
 
     &__time {
         color: $text;
+
+        &-opened {
+            color: inherit;
+        }
     }
 }

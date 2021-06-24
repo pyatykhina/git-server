@@ -36,17 +36,17 @@ function Build({ variant }) {
                     {variant === "opened" && <div className="build-divider"/>} 
                     {<div className="build-divider build-divider-constant"/>} 
 
-                    <div>
+                    <div className={`${variant !== "opened" && "build-block"}`}>
                         <div className={`build-line ${variant === "opened" && "build-line-opened"}`}>
                             <div className="build-line-subline">
                                 <img alt="calendar" src={calendar} className="build__icon" />
-                                <div className="build__time">21 янв, 03:06</div>
+                                <div className={`build__time ${variant === "opened" && "build__time-opened"}`}>21 янв, 03:06</div>
                             </div>
                         </div>
                         <div className={`build-line ${variant === "opened" && "build-line-opened"}`}>
                             <div className="build-line-subline">
                                 <img alt="watch" src={watch} className="build__icon" />
-                                <div className="build__time">1 ч 20 мин</div>
+                                <div className={`build__time ${variant === "opened" && "build__time-opened"}`}>1 ч 20 мин</div>
                             </div>
                         </div>
                     </div>
