@@ -1,5 +1,11 @@
 {
-	"settings": {},
+	"settings": {
+		"id": "8b078823-5b82-4d1d-9d0c-eef4a210fa52",
+		"repoName": "https://github.com/tanyapyat/async.git",
+		"buildCommand": "req.body.buildCommand",
+		"mainBranch": "req.body.mainBranch",
+		"period": 0
+	},
 	"builds": [
 		{
 			"buildNumber": 37,
@@ -7,7 +13,7 @@
 			"commitMessage": "homework",
 			"authorName": "Татьяна Пятыхина",
 			"dateTime": 1623951855329,
-			"durationTime": 0
+			"durationTime": 779446279
 		},
 		{
 			"buildNumber": 35,
@@ -15,7 +21,7 @@
 			"commitMessage": "renaming files",
 			"authorName": "Татьяна Пятыхина",
 			"dateTime": 1623951855330,
-			"durationTime": 0
+			"durationTime": 779446278
 		},
 		{
 			"buildNumber": 33,
@@ -23,7 +29,7 @@
 			"commitMessage": "renaming files\na4266872792e2fbedaa0b542e270a033d5a63b88",
 			"authorName": "Татьяна Пятыхина",
 			"dateTime": 1623951855331,
-			"durationTime": 0
+			"durationTime": 779446277
 		},
 		{
 			"buildNumber": 29,
@@ -31,7 +37,7 @@
 			"commitMessage": "renaming files\na4266872792e2fbedaa0b542e270a033d5a63b88",
 			"authorName": "Татьяна Пятыхина",
 			"dateTime": 1623951855331,
-			"durationTime": 0
+			"durationTime": 779446277
 		},
 		{
 			"buildNumber": 27,
@@ -39,7 +45,7 @@
 			"commitMessage": "renaming files\na4266872792e2fbedaa0b542e270a033d5a63b88",
 			"authorName": "Татьяна Пятыхина",
 			"dateTime": 1623951855331,
-			"durationTime": 0
+			"durationTime": 779446277
 		},
 		{
 			"buildNumber": 26,
@@ -47,7 +53,7 @@
 			"commitMessage": "renaming files\na4266872792e2fbedaa0b542e270a033d5a63b88",
 			"authorName": "Татьяна Пятыхина",
 			"dateTime": 1623951855331,
-			"durationTime": 0
+			"durationTime": 779446277
 		},
 		{
 			"buildNumber": 25,
@@ -55,7 +61,7 @@
 			"commitMessage": "renaming files\na4266872792e2fbedaa0b542e270a033d5a63b88",
 			"authorName": "Татьяна Пятыхина",
 			"dateTime": 1623951855331,
-			"durationTime": 0
+			"durationTime": 779446277
 		},
 		{
 			"buildNumber": 30,
@@ -63,7 +69,7 @@
 			"commitMessage": "renaming files\na4266872792e2fbedaa0b542e270a033d5a63b88",
 			"authorName": "Татьяна Пятыхина",
 			"dateTime": 1623951855331,
-			"durationTime": 0
+			"durationTime": 779446277
 		},
 		{
 			"buildNumber": 24,
@@ -71,7 +77,7 @@
 			"commitMessage": "commit.split(', ')[2]",
 			"authorName": "req.body.authorName",
 			"dateTime": 1623951855331,
-			"durationTime": 0
+			"durationTime": 779446277
 		},
 		{
 			"buildNumber": 28,
@@ -79,7 +85,7 @@
 			"commitMessage": "renaming files\na4266872792e2fbedaa0b542e270a033d5a63b88",
 			"authorName": "Татьяна Пятыхина",
 			"dateTime": 1623951855331,
-			"durationTime": 0
+			"durationTime": 779446277
 		},
 		{
 			"buildNumber": 23,
@@ -87,7 +93,7 @@
 			"commitMessage": "commit.split(', ')[2]",
 			"authorName": "req.body.authorName",
 			"dateTime": 1623951855331,
-			"durationTime": 0
+			"durationTime": 779446277
 		},
 		{
 			"buildNumber": 21,
@@ -95,7 +101,7 @@
 			"commitMessage": "commit.split(', ')[2]",
 			"authorName": "req.body.authorName",
 			"dateTime": 1623951855331,
-			"durationTime": 0
+			"durationTime": 779446277
 		},
 		{
 			"buildNumber": 18,
@@ -103,7 +109,7 @@
 			"commitMessage": "req.body.commitMessage",
 			"authorName": "req.body.authorName",
 			"dateTime": 1623951855332,
-			"durationTime": 0
+			"durationTime": 779446276
 		},
 		{
 			"buildNumber": 17,
@@ -111,7 +117,7 @@
 			"commitMessage": "req.body.commitMessage",
 			"authorName": "req.body.authorName",
 			"dateTime": 1623951855332,
-			"durationTime": 0
+			"durationTime": 779446276
 		},
 		{
 			"buildNumber": 15,
@@ -119,7 +125,7 @@
 			"commitMessage": "req.body.commitMessage",
 			"authorName": "req.body.authorName",
 			"dateTime": 1623951855332,
-			"durationTime": 0
+			"durationTime": 779446276
 		},
 		{
 			"buildNumber": 22,
@@ -127,7 +133,7 @@
 			"commitMessage": "commit.split(', ')[2]",
 			"authorName": "req.body.authorName",
 			"dateTime": 1623951855331,
-			"durationTime": 0
+			"durationTime": 779446277
 		},
 		{
 			"buildNumber": 36,
@@ -135,7 +141,7 @@
 			"commitMessage": "renaming files",
 			"authorName": "Татьяна Пятыхина",
 			"dateTime": 1623951855330,
-			"durationTime": 0
+			"durationTime": 779446278
 		},
 		{
 			"buildNumber": 13,
@@ -143,7 +149,7 @@
 			"commitMessage": "req.body.commitMessage",
 			"authorName": "req.body.authorName",
 			"dateTime": 1623951855332,
-			"durationTime": 0
+			"durationTime": 779446276
 		},
 		{
 			"buildNumber": 20,
@@ -151,7 +157,7 @@
 			"commitMessage": "req.body.commitMessage",
 			"authorName": "req.body.authorName",
 			"dateTime": 1623951855331,
-			"durationTime": 0
+			"durationTime": 779446277
 		},
 		{
 			"buildNumber": 19,
@@ -159,7 +165,7 @@
 			"commitMessage": "req.body.commitMessage",
 			"authorName": "req.body.authorName",
 			"dateTime": 1623951855331,
-			"durationTime": 0
+			"durationTime": 779446277
 		},
 		{
 			"buildNumber": 31,
@@ -167,7 +173,7 @@
 			"commitMessage": "renaming files\na4266872792e2fbedaa0b542e270a033d5a63b88",
 			"authorName": "Татьяна Пятыхина",
 			"dateTime": 1623951855331,
-			"durationTime": 0
+			"durationTime": 779446277
 		},
 		{
 			"buildNumber": 34,
@@ -175,7 +181,7 @@
 			"commitMessage": "renaming files\na4266872792e2fbedaa0b542e270a033d5a63b88",
 			"authorName": "Татьяна Пятыхина",
 			"dateTime": 1623951855330,
-			"durationTime": 0
+			"durationTime": 779446278
 		},
 		{
 			"buildNumber": 32,
@@ -183,7 +189,7 @@
 			"commitMessage": "renaming files\na4266872792e2fbedaa0b542e270a033d5a63b88",
 			"authorName": "Татьяна Пятыхина",
 			"dateTime": 1623951855331,
-			"durationTime": 0
+			"durationTime": 779446277
 		},
 		{
 			"buildNumber": 16,
@@ -191,7 +197,7 @@
 			"commitMessage": "req.body.commitMessage",
 			"authorName": "req.body.authorName",
 			"dateTime": 1623951855332,
-			"durationTime": 0
+			"durationTime": 779446276
 		},
 		{
 			"buildNumber": 14,
@@ -199,7 +205,7 @@
 			"commitMessage": "req.body.commitMessage",
 			"authorName": "req.body.authorName",
 			"dateTime": 1623951855332,
-			"durationTime": 0
+			"durationTime": 779446276
 		}
 	]
 }

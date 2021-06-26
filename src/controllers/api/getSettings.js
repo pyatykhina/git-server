@@ -8,9 +8,7 @@ module.exports = async (req, res) => {
             const settingsFile = new Settings(response.data.data);
             await db.insertSettings(settingsFile, JSON.stringify(response.data.data));
 
-            return res.status(200).json({ 
-                settings: response.data 
-            })
+            return res.status(200).json(response.data)
         })
         .catch(error => {
             return res.status(error.response.status).json({ 
