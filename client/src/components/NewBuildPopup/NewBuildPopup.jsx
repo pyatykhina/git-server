@@ -1,4 +1,5 @@
 import React from "react";
+import { useHistory } from "react-router-dom";
 import "./NewBuildPopup.scss";
 import { addBuildToQueue } from "../../redux/middlewares";
 import { useDispatch } from "react-redux";
@@ -8,11 +9,13 @@ import Button from "../../components/Button";
 
 const NewBuildPopup = props => {
     const dispatch = useDispatch();
+    const history = useHistory();
 
     const runBuild = e => {
         e.preventDefault();
         const inputs = document.getElementsByClassName("textfield__input");
-        dispatch(addBuildToQueue(inputs["commitHash"].value));
+        dispatch(addBuildToQueue(inputs["commitHash"].value))
+            .then(buildId => history.push(`/build/${buildId}`));
     }
 
     return (

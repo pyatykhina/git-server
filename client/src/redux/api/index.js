@@ -40,7 +40,7 @@ export const api = {
             .post(`/api/builds/${commitHash}`)
             .then(response => {
                 if (response.status === 200) {
-                    return response.data;
+                    return response.data.build.id;
                 }
             })
             .catch(error => error.response);

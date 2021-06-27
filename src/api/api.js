@@ -22,7 +22,7 @@ module.exports = {
     addBuildToQueue(config) {
         return axiosInstance()
             .post('/build/request', config)
-            .then(response => response);
+            .then(response => response.data);
     },
 
     getBuild(buildId) {

@@ -26,8 +26,10 @@ module.exports = async (req, res) => {
     };
 
     await api.addBuildToQueue(config)
-        .then(() => {
-            return res.status(200).json();
+        .then(response => {
+            return res.status(200).json({
+                build: response.data
+            });
         })
         .catch(error => {
             return res.status(error.response.status).json({ 
