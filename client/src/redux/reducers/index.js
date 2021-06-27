@@ -1,15 +1,16 @@
 import {
     SET_SETTINGS,
-    SET_ALL_BUILDS
+    SET_ALL_BUILDS,
+    SET_BUILD
 } from "../actions";
 
 export const initialState = {
     settings: {},
-    allBuilds: []
+    allBuilds: [],
+    build: {}
 };
 
 const rootReducer = (state = initialState, action) => {
-    console.log('!!!!!', action)
     switch (action.type) {
         case SET_SETTINGS:
             return {
@@ -20,6 +21,11 @@ const rootReducer = (state = initialState, action) => {
             return {
                 ...state,
                 allBuilds: action.allBuilds
+            };
+        case SET_BUILD:
+            return {
+                ...state,
+                build: action.build
             };
         default:
             return state;

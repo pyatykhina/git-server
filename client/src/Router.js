@@ -28,7 +28,7 @@ function Router() {
                   ? <Route path="/" exact component={History} />
                   : <Route path="/" exact component={Start} />
               }
-              <Route path="/build/:number" component={Details} />
+              <Route path="/build/:id" component={Details} />
               <Route path="/settings" component={Settings} />
               <Redirect from='*' to='/' />
             </Switch>

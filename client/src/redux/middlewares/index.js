@@ -1,7 +1,8 @@
 import { api } from "../api";
 import {
     setSettings,
-    setAllBuilds
+    setAllBuilds,
+    setBuild
 } from "../actions";
 
 export const getSettings = () => dispatch => {
@@ -21,6 +22,18 @@ export const getAllBuilds = () => dispatch => {
         .getAllBuilds()
         .then(data => {
             dispatch(setAllBuilds(data));
+            return data;
+        })
+        .catch(error => {
+            console.log(error)
+        });
+}
+
+export const getBuild = buildId => dispatch => {
+    return api
+        .getBuild(buildId)
+        .then(data => {
+            dispatch(setBuild(data));
             return data;
         })
         .catch(error => {

@@ -51,7 +51,7 @@ export const api = {
             .get(`/api/builds/${buildId}`)
             .then(response => {
                 if (response.status === 200) {
-                    return response.data;
+                    return response.data.build;
                 }
             })
             .catch(error => error.response);

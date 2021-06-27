@@ -39,7 +39,7 @@ function History() {
                 </div>
             </header>
             {allBuilds?.map(build => (
-                <Link to={`/build/${build.buildNumber}`}>
+                <Link to={`/build/${build.id}`}>
                     <Build 
                         buildNumber={build.buildNumber}
                         commitMessage={build.commitMessage}
