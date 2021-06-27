@@ -21,7 +21,7 @@ export const editSettings = config => dispatch => {
     return api
         .editSettings(config)
         .then(data => {
-            dispatch(setSettings(data));
+            dispatch(getSettings());
             return data;
         })
         .catch(error => {
@@ -46,6 +46,18 @@ export const getBuild = buildId => dispatch => {
         .getBuild(buildId)
         .then(data => {
             dispatch(setBuild(data));
+            return data;
+        })
+        .catch(error => {
+            console.log(error)
+        });
+}
+
+export const addBuildToQueue = commitHash => dispatch => {
+    return api
+        .addBuildToQueue(commitHash)
+        .then(data => {
+            dispatch(getAllBuilds());
             return data;
         })
         .catch(error => {
