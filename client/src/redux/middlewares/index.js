@@ -2,7 +2,8 @@ import { api } from "../api";
 import {
     setSettings,
     setAllBuilds,
-    setBuild
+    setBuild,
+    setLogs
 } from "../actions";
 
 export const getSettings = () => dispatch => {
@@ -58,6 +59,18 @@ export const addBuildToQueue = commitHash => dispatch => {
         .addBuildToQueue(commitHash)
         .then(data => {
             dispatch(getAllBuilds());
+            return data;
+        })
+        .catch(error => {
+            console.log(error)
+        });
+}
+
+export const getLogs = buildId => dispatch => {
+    return api
+        .getLogs(buildId)
+        .then(data => {
+            dispatch(setLogs(data));
             return data;
         })
         .catch(error => {

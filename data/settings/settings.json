@@ -1,1 +1,1 @@
-{"id":"8b078823-5b82-4d1d-9d0c-eef4a210fa52","repoName":"https://github.com/tanyapyat/async","buildCommand":"run build","mainBranch":"master","period":10}
+{"id":"8b078823-5b82-4d1d-9d0c-eef4a210fa52","repoName":"https://github.com/tanyapyat/async","buildCommand":"ls","mainBranch":"master","period":10}

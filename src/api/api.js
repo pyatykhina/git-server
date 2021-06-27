@@ -33,7 +33,7 @@ module.exports = {
 
     getLogs(buildId) {
         return axiosInstance()
-            .get(`/build/log/${buildId}`)
-            .then(response => response);
+            .get(`/build/log?buildId=${buildId}`)
+            .then(response => response.data);
     }
 }

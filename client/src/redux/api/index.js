@@ -62,7 +62,7 @@ export const api = {
             .get(`/api/builds/${buildId}/logs`)
             .then(response => {
                 if (response.status === 200) {
-                    return response.data;
+                    return response.data.logs;
                 }
             })
             .catch(error => error.response);

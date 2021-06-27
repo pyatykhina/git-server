@@ -1,13 +1,15 @@
 import {
     SET_SETTINGS,
     SET_ALL_BUILDS,
-    SET_BUILD
+    SET_BUILD,
+    SET_LOGS
 } from "../actions";
 
 export const initialState = {
     settings: {},
     allBuilds: [],
-    build: {}
+    build: {},
+    logs: {}
 };
 
 const rootReducer = (state = initialState, action) => {
@@ -26,6 +28,11 @@ const rootReducer = (state = initialState, action) => {
             return {
                 ...state,
                 build: action.build
+            };
+        case SET_LOGS:
+            return {
+                ...state,
+                logs: action.logs
             };
         default:
             return state;

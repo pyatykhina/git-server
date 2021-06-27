@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./Details.scss";
 import { useDispatch, useSelector } from "react-redux";
-import { getBuild } from "../../redux/middlewares";
+import { getBuild, getLogs } from "../../redux/middlewares";
 
 import IconButton from "../../components/IconButton";
 import Build from "../../components/Build";
@@ -12,6 +12,7 @@ function Details(props) {
 
     useEffect(() => {
         dispatch(getBuild(props.match.params.id));
+        dispatch(getLogs(props.match.params.id));
     }, [])
 
     const repoName = useSelector(state => state.settings.repoName);
