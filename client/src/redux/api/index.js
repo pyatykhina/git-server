@@ -13,12 +13,12 @@ export const api = {
             .catch(error => error.response);
     },
 
-    setSettings(config) {
+    editSettings(config) {
         return axios
             .post("/api/settings", config)
             .then(response => {
                 if (response.status === 200) {
-                    return response.data;
+                    return response.data.settings;
                 }
             })
             .catch(error => error.response);

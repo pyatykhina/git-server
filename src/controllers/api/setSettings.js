@@ -12,8 +12,10 @@ module.exports = async (req, res) => {
     exec(`git clone ${config.repoName} local-repo`);
 
     await api.setSettings(config)
-        .then(() => {
-            return res.status(200).json();
+        .then(response => {
+            return res.status(200).json({
+                settings: JSON.parse(response.config.data)
+            });
         })
         .catch(error => {
             return res.status(error.response.status).json({ 

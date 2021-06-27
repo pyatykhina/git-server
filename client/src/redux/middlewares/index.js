@@ -17,6 +17,18 @@ export const getSettings = () => dispatch => {
         });
 }
 
+export const editSettings = config => dispatch => {
+    return api
+        .editSettings(config)
+        .then(data => {
+            dispatch(setSettings(data));
+            return data;
+        })
+        .catch(error => {
+            console.log(error)
+        });
+}
+
 export const getAllBuilds = () => dispatch => {
     return api
         .getAllBuilds()

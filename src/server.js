@@ -1,9 +1,13 @@
 const http = require('http');
 const express = require('express');
 const { PORT } = require('./config');
+var bodyParser = require('body-parser');
 const { apiRouter, mainRouter } = require('./routers');
 
 const app = express();
+
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: false }));
 
 app.use('/api', apiRouter);
 
