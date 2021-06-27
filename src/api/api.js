@@ -4,7 +4,7 @@ module.exports = {
     getSettings() {
         return axiosInstance()
             .get('/conf')
-            .then(response => response);
+            .then(response => response.data);
     },
 
     setSettings(config) {
@@ -16,7 +16,7 @@ module.exports = {
     getAllBuilds() {
         return axiosInstance()
             .get('/build/list')
-            .then(response => response);
+            .then(response => response.data);
     },
 
     addBuildToQueue(config) {

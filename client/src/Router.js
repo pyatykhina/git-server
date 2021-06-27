@@ -1,5 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
 import { getSettings } from "./redux/middlewares";
 
 import Details from "./pages/Details";
@@ -9,11 +10,13 @@ import Start from "./pages/Start";
 import Footer from "./components/Footer";
 
 function Router() {
-  const [repository, setRepository] = useState(null);
+  const dispatch = useDispatch();
 
   useEffect(() => {
-    setRepository(getSettings());
-  }, [])
+    dispatch(getSettings());
+  }, []);
+
+  const repository = useSelector(state => state.settings);
 
   return (
     <BrowserRouter>

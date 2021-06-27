@@ -1,4 +1,4 @@
-const axios = require('axios');
+import axios from "axios";
 
 export const api = {
 
@@ -7,7 +7,7 @@ export const api = {
             .get("/api/settings")
             .then(response => {
                 if (response.status === 200) {
-                    return response.data;
+                    return response.data.settings;
                 }
             })
             .catch(error => error.response);
@@ -29,7 +29,7 @@ export const api = {
             .get("/api/builds")
             .then(response => {
                 if (response.status === 200) {
-                    return response.data;
+                    return response.data.allBuilds;
                 }
             })
             .catch(error => error.response);

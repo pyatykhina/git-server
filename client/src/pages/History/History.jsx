@@ -1,6 +1,8 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./History.scss";
+import { getAllBuilds } from "../../redux/middlewares";
+import { useDispatch, useSelector } from "react-redux";
 
 import IconButton from "../../components/IconButton";
 import Build from "../../components/Build";
@@ -8,6 +10,11 @@ import NewBuildPopup from "../../components/NewBuildPopup";
 
 function History() {
     const [newBuildPopup, setNewBuildPopup] = useState(false);
+    const dispatch = useDispatch();
+
+    useEffect(() => {
+        dispatch(getAllBuilds());
+    }, [])
 
     const openNewBuildPopup = () => {
         setNewBuildPopup(true);
@@ -17,20 +24,31 @@ function History() {
         setNewBuildPopup(false);
     }
 
+    const repoName = useSelector(state => state.settings.repoName);
+    const allBuilds = useSelector(state => state.allBuilds);
+
     return (
         <>
             <header>
                 <div className="logo">
-                    philip1967/my-awesome-repo
+                    {repoName?.split("/")[3]}/{repoName?.split("/")[4].split(".")[0]}
                 </div>
                 <div className="header-buttons">
                     <div className="header-button"><IconButton icon="run" title="Run build" onClick={openNewBuildPopup} /></div>
                     <Link to="/settings"><IconButton icon="settings" /></Link>
                 </div>
             </header>
-            <Link to="/build/0"><Build /></Link>
-            <Link to="/build/0"><Build /></Link>
-            <Link to="/build/0"><Build /></Link>
+            {allBuilds?.map(build => (
+                <Link to={`/build/${build.buildNumber}`}>
+                    <Build 
+                        buildNumber={build.buildNumber}
+                        commitMessage={build.commitMessage}
+                        branchName={build.branchName}
+                        commitHash={build.commitHash}
+                        authorName={build.authorName}
+                    />
+                </Link>
+            ))}
 
             {newBuildPopup && <NewBuildPopup onClose={closeNewBuildPopup} />}
         </>

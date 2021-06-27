@@ -7,7 +7,7 @@ import author from "../../assets/images/author.svg";
 import calendar from "../../assets/images/calendar.svg";
 import watch from "../../assets/images/watch.svg";
 
-function Build({ variant }) {
+function Build({ variant, buildNumber, commitMessage, branchName, commitHash, authorName }) {
     return (
         <>
             <li className="build">
@@ -17,18 +17,18 @@ function Build({ variant }) {
                 <span className={`build-info ${variant === "opened" && "build-info-opened"}`}>
                     <div>
                         <div className="build-line">
-                            <div className="build__number">#1368</div>
-                            <div className="build__title">add documentation for postgres scaler</div>
+                            <div className="build__number">#{buildNumber}</div>
+                            <div className="build__title">{commitMessage}</div>
                         </div>
                         <div className="build-line">
                             <div className="build-line-subline build-line-subline-xs">
                                 <img alt="branch" src={branch} className="build__icon" />
-                                <div className="build__branch">master</div>
-                                <div className="build__hash">9c9f0b9</div>
+                                <div className="build__branch">{branchName}</div>
+                                <div className="build__hash">{commitHash}</div>
                             </div>
                             <div className="build-line-subline">
                                 <img alt="author" src={author} className="build__icon" />
-                                <div className="build__author">Philip Kirkorov</div>
+                                <div className="build__author">{authorName}</div>
                             </div>
                         </div>
                     </div>

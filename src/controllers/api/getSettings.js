@@ -5,10 +5,12 @@ const Settings = require('../../db/Settings');
 module.exports = async (req, res) => {
     await api.getSettings()
         .then(async response => {
-            const settingsFile = new Settings(response.data.data);
-            await db.insertSettings(settingsFile, JSON.stringify(response.data.data));
+            const settingsFile = new Settings(response.data);
+            await db.insertSettings(settingsFile, JSON.stringify(response.data));
 
-            return res.status(200).json(response.data)
+            return res.status(200).json({ 
+                settings: response.data
+            })
         })
         .catch(error => {
             return res.status(error.response.status).json({ 

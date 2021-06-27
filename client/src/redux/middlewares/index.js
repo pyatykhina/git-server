@@ -1,9 +1,10 @@
 import { api } from "../api";
 import {
-    setSettings
+    setSettings,
+    setAllBuilds
 } from "../actions";
 
-const getSettings = () => dispatch => {
+export const getSettings = () => dispatch => {
     return api
         .getSettings()
         .then(data => {
@@ -15,6 +16,14 @@ const getSettings = () => dispatch => {
         });
 }
 
-export {
-    getSettings
+export const getAllBuilds = () => dispatch => {
+    return api
+        .getAllBuilds()
+        .then(data => {
+            dispatch(setAllBuilds(data));
+            return data;
+        })
+        .catch(error => {
+            console.log(error)
+        });
 }
