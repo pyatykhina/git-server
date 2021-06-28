@@ -20,6 +20,11 @@ $divider: #F0F2F3;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+
+        @media screen and (max-width: 320px) {
+            flex-direction: row;
+            justify-content: flex-start;
+        }
     }
 
     &-line {
@@ -38,6 +43,14 @@ $divider: #F0F2F3;
             display: inline-flex;
             margin-bottom: 0 !important;
             margin-right: 8px;
+        }
+
+        &-constant {
+            @media screen and (max-width: 320px) {
+                display: inline-flex;
+                margin-bottom: 0 !important;
+                margin-right: 8px;
+            }
         }
 
         &:first-child {

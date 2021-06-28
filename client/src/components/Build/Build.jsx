@@ -24,7 +24,7 @@ function Build({ variant, buildNumber, commitMessage, branchName, commitHash, au
                             <div className="build-line-subline build-line-subline-xs">
                                 <img alt="branch" src={branch} className="build__icon" />
                                 <div className="build__branch">{branchName}</div>
-                                <div className="build__hash">{commitHash}</div>
+                                <div className="build__hash">{commitHash?.substr(0, 7)}</div>
                             </div>
                             <div className="build-line-subline">
                                 <img alt="author" src={author} className="build__icon" />
@@ -34,16 +34,16 @@ function Build({ variant, buildNumber, commitMessage, branchName, commitHash, au
                     </div>
 
                     {variant === "opened" && <div className="build-divider"/>} 
-                    {<div className="build-divider build-divider-constant"/>} 
+                    {variant !== "opened" && <div className="build-divider build-divider-constant"/>} 
 
                     <div className={`${variant !== "opened" && "build-block"}`}>
-                        <div className={`build-line ${variant === "opened" && "build-line-opened"}`}>
+                        <div className={`build-line build-line-constant ${variant === "opened" && "build-line-opened"}`}>
                             <div className="build-line-subline">
                                 <img alt="calendar" src={calendar} className="build__icon" />
                                 <div className={`build__time ${variant === "opened" && "build__time-opened"}`}>21 янв, 03:06</div>
                             </div>
                         </div>
-                        <div className={`build-line ${variant === "opened" && "build-line-opened"}`}>
+                        <div className={`build-line build-line-constant ${variant === "opened" && "build-line-opened"}`}>
                             <div className="build-line-subline">
                                 <img alt="watch" src={watch} className="build__icon" />
                                 <div className={`build__time ${variant === "opened" && "build__time-opened"}`}>1 ч 20 мин</div>
