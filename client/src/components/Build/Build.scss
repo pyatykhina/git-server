@@ -107,7 +107,26 @@ $divider: #F0F2F3;
         font-weight: 500;
         font-size: 18px;
         margin-right: 4px;
-        color: $green;
+
+        &-Waiting {
+            color: $yellow;
+        }
+
+        &-InProgress {
+            color: $yellow;
+        }
+
+        &-Success {
+            color: $green;
+        }
+
+        &-Fail {
+            color: $red;
+        }
+
+        &-Canceled {
+            color: $red;
+        }
     }
 
     &__title {

@@ -2,22 +2,28 @@ import React from "react";
 import "./Build.scss";
 
 import done from "../../assets/images/done.svg";
+import pending from "../../assets/images/pending.svg";
+import fail from "../../assets/images/fail.svg";
 import branch from "../../assets/images/branch.svg";
 import author from "../../assets/images/author.svg";
 import calendar from "../../assets/images/calendar.svg";
 import watch from "../../assets/images/watch.svg";
 
-function Build({ variant, buildNumber, commitMessage, branchName, commitHash, authorName }) {
+function Build({ variant, buildNumber, commitMessage, branchName, commitHash, authorName, status }) {
     return (
         <>
             <li className="build">
                 <div>
-                    <img alt="done" src={done} className="build-status"/>
+                    {status === "Waiting" && <img alt="pending" src={pending} className="build-status"/>}
+                    {status === "InProgress" && <img alt="pending" src={pending} className="build-status"/>}
+                    {status === "Success" && <img alt="done" src={done} className="build-status"/>}
+                    {status === "Fail" && <img alt="fail" src={fail} className="build-status"/>}
+                    {status === "Canceled" && <img alt="fail" src={fail} className="build-status"/>}
                 </div>
                 <span className={`build-info ${variant === "opened" && "build-info-opened"}`}>
                     <div>
                         <div className="build-line">
-                            <div className="build__number">#{buildNumber}</div>
+                            <div className={`build__number build__number-${status}`}>#{buildNumber}</div>
                             <div className="build__title">{commitMessage}</div>
                         </div>
                         <div className="build-line">

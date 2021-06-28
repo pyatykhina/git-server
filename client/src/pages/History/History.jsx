@@ -46,6 +46,7 @@ function History() {
                         branchName={build.branchName}
                         commitHash={build.commitHash}
                         authorName={build.authorName}
+                        status={build.status}
                     />
                 </Link>
             ))}
