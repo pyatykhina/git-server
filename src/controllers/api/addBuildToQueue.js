@@ -22,7 +22,9 @@ module.exports = async (req, res) => {
         commitMessage: commit[2],
         commitHash: commitHash,
         branchName: branch,
-        authorName: commit[1]
+        authorName: commit[1],
+        start: Date.now(),
+        duration: 0
     };
 
     await api.addBuildToQueue(config)

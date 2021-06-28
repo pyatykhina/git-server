@@ -1,5 +1,6 @@
 import React from "react";
 import "./Build.scss";
+import moment from "moment";
 
 import done from "../../assets/images/done.svg";
 import pending from "../../assets/images/pending.svg";
@@ -9,7 +10,7 @@ import author from "../../assets/images/author.svg";
 import calendar from "../../assets/images/calendar.svg";
 import watch from "../../assets/images/watch.svg";
 
-function Build({ variant, buildNumber, commitMessage, branchName, commitHash, authorName, status }) {
+function Build({ variant, buildNumber, commitMessage, branchName, commitHash, authorName, status, start, duration }) {
     return (
         <>
             <li className="build">
@@ -44,16 +45,20 @@ function Build({ variant, buildNumber, commitMessage, branchName, commitHash, au
 
                     <div className={`${variant !== "opened" && "build-block"}`}>
                         <div className={`build-line build-line-constant ${variant === "opened" && "build-line-opened"}`}>
-                            <div className="build-line-subline">
+                            {start && <div className="build-line-subline">
                                 <img alt="calendar" src={calendar} className="build__icon" />
-                                <div className={`build__time ${variant === "opened" && "build__time-opened"}`}>21 янв, 03:06</div>
-                            </div>
+                                <div className={`build__time ${variant === "opened" && "build__time-opened"}`}>
+                                    {moment(`${start}Z`).format("DD MMMM, HH:mm")}
+                                </div>
+                            </div>}
                         </div>
                         <div className={`build-line build-line-constant ${variant === "opened" && "build-line-opened"}`}>
-                            <div className="build-line-subline">
+                            {duration && <div className="build-line-subline">
                                 <img alt="watch" src={watch} className="build__icon" />
-                                <div className={`build__time ${variant === "opened" && "build__time-opened"}`}>1 ч 20 мин</div>
-                            </div>
+                                <div className={`build__time ${variant === "opened" && "build__time-opened"}`}>
+                                    {moment(duration).format("HH ч mm мин")}
+                                </div>
+                            </div>}
                         </div>
                     </div>
                 </span>

@@ -6,5 +6,1006 @@
 		"mainBranch": "master",
 		"period": 10
 	},
-	"builds": []
+	"builds": [
+		{
+			"buildNumber": 72,
+			"commitHash": "a4266872792e2fbedaa0b542e270a033d5a63b88",
+			"commitMessage": "homework",
+			"authorName": "Татьяна Пятыхина",
+			"start": 1624884406876,
+			"duration": 1
+		},
+		{
+			"buildNumber": 71,
+			"commitHash": "a4266872792e2fbedaa0b542e270a033d5a63b88",
+			"commitMessage": "homework",
+			"authorName": "Татьяна Пятыхина",
+			"start": 1624884406877,
+			"duration": 510
+		},
+		{
+			"buildNumber": 70,
+			"commitHash": "a4266872792e2fbedaa0b542e270a033d5a63b88",
+			"commitMessage": "homework",
+			"authorName": "Татьяна Пятыхина",
+			"start": 1624884406877,
+			"duration": 510
+		},
+		{
+			"buildNumber": 67,
+			"commitHash": "a4266872792e2fbedaa0b542e270a033d5a63b88",
+			"commitMessage": "homework",
+			"authorName": "Татьяна Пятыхина",
+			"start": 1624884406878,
+			"duration": 509
+		},
+		{
+			"buildNumber": 66,
+			"commitHash": "a4266872792e2fbedaa0b542e270a033d5a63b88",
+			"commitMessage": "homework",
+			"authorName": "Татьяна Пятыхина",
+			"start": 1624884406878,
+			"duration": 509
+		},
+		{
+			"buildNumber": 69,
+			"commitHash": "a4266872792e2fbedaa0b542e270a033d5a63b88",
+			"commitMessage": "homework",
+			"authorName": "Татьяна Пятыхина",
+			"start": 1624884406878,
+			"duration": 509
+		},
+		{
+			"buildNumber": 68,
+			"commitHash": "a4266872792e2fbedaa0b542e270a033d5a63b88",
+			"commitMessage": "homework",
+			"authorName": "Татьяна Пятыхина",
+			"start": 1624884406878,
+			"duration": 509
+		},
+		{
+			"buildNumber": 65,
+			"commitHash": "a4266872792e2fbedaa0b542e270a033d5a63b88",
+			"commitMessage": "homework",
+			"authorName": "Татьяна Пятыхина",
+			"start": 1624884406878,
+			"duration": 509
+		},
+		{
+			"buildNumber": 64,
+			"commitHash": "a4266872792e2fbedaa0b542e270a033d5a63b88",
+			"commitMessage": "homework",
+			"authorName": "Татьяна Пятыхина",
+			"start": 1624884406878,
+			"duration": 509
+		},
+		{
+			"buildNumber": 63,
+			"commitHash": "a4266872792e2fbedaa0b542e270a033d5a63b88",
+			"commitMessage": "homework",
+			"authorName": "Татьяна Пятыхина",
+			"start": 1624884406878,
+			"duration": 509
+		},
+		{
+			"buildNumber": 62,
+			"commitHash": "a4266872792e2fbedaa0b542e270a033d5a63b88",
+			"commitMessage": "homework",
+			"authorName": "Татьяна Пятыхина",
+			"start": 1624884406879,
+			"duration": 508
+		},
+		{
+			"buildNumber": 60,
+			"commitHash": "a4266872792e2fbedaa0b542e270a033d5a63b88",
+			"commitMessage": "homework",
+			"authorName": "Татьяна Пятыхина",
+			"start": 1624884406879,
+			"duration": 508
+		},
+		{
+			"buildNumber": 61,
+			"commitHash": "a4266872792e2fbedaa0b542e270a033d5a63b88",
+			"commitMessage": "homework",
+			"authorName": "Татьяна Пятыхина",
+			"start": 1624884406879,
+			"duration": 508
+		},
+		{
+			"buildNumber": 57,
+			"commitHash": "a4266872792e2fbedaa0b542e270a033d5a63b88",
+			"commitMessage": "homework",
+			"authorName": "Татьяна Пятыхина",
+			"start": 1624884406879,
+			"duration": 508
+		},
+		{
+			"buildNumber": 58,
+			"commitHash": "a4266872792e2fbedaa0b542e270a033d5a63b88",
+			"commitMessage": "homework",
+			"authorName": "Татьяна Пятыхина",
+			"start": 1624884406879,
+			"duration": 508
+		},
+		{
+			"buildNumber": 59,
+			"commitHash": "a4266872792e2fbedaa0b542e270a033d5a63b88",
+			"commitMessage": "homework",
+			"authorName": "Татьяна Пятыхина",
+			"start": "2021-06-27T16:16:59.58",
+			"duration": null
+		},
+		{
+			"buildNumber": 56,
+			"commitHash": "a4266872792e2fbedaa0b542e270a033d5a63b88",
+			"commitMessage": "homework",
+			"authorName": "Татьяна Пятыхина",
+			"start": 1624884406879,
+			"duration": 508
+		},
+		{
+			"buildNumber": 55,
+			"commitHash": "a4266872792e2fbedaa0b542e270a033d5a63b88",
+			"commitMessage": "homework",
+			"authorName": "Татьяна Пятыхина",
+			"start": 1624884406879,
+			"duration": 508
+		},
+		{
+			"buildNumber": 54,
+			"commitHash": "a4266872792e2fbedaa0b542e270a033d5a63b88",
+			"commitMessage": "homework",
+			"authorName": "Татьяна Пятыхина",
+			"start": 1624884406880,
+			"duration": 507
+		},
+		{
+			"buildNumber": 51,
+			"commitHash": "a4266872792e2fbedaa0b542e270a033d5a63b88",
+			"commitMessage": "homework",
+			"authorName": "Татьяна Пятыхина",
+			"start": 1624884406880,
+			"duration": 507
+		},
+		{
+			"buildNumber": 52,
+			"commitHash": "a4266872792e2fbedaa0b542e270a033d5a63b88",
+			"commitMessage": "homework",
+			"authorName": "Татьяна Пятыхина",
+			"start": 1624884406880,
+			"duration": 507
+		},
+		{
+			"buildNumber": 53,
+			"commitHash": "a4266872792e2fbedaa0b542e270a033d5a63b88",
+			"commitMessage": "homework",
+			"authorName": "Татьяна Пятыхина",
+			"start": 1624884406880,
+			"duration": 507
+		},
+		{
+			"buildNumber": 49,
+			"commitHash": "a4266872792e2fbedaa0b542e270a033d5a63b88",
+			"commitMessage": "homework",
+			"authorName": "Татьяна Пятыхина",
+			"start": 1624884406880,
+			"duration": 507
+		},
+		{
+			"buildNumber": 50,
+			"commitHash": "a4266872792e2fbedaa0b542e270a033d5a63b88",
+			"commitMessage": "homework",
+			"authorName": "Татьяна Пятыхина",
+			"start": 1624884406880,
+			"duration": 507
+		},
+		{
+			"buildNumber": 48,
+			"commitHash": "a4266872792e2fbedaa0b542e270a033d5a63b88",
+			"commitMessage": "homework",
+			"authorName": "Татьяна Пятыхина",
+			"start": 1624884406880,
+			"duration": 507
+		},
+		{
+			"buildNumber": 72,
+			"commitHash": "a4266872792e2fbedaa0b542e270a033d5a63b88",
+			"commitMessage": "homework",
+			"authorName": "Татьяна Пятыхина",
+			"start": 1624884482709,
+			"duration": 437
+		},
+		{
+			"buildNumber": 71,
+			"commitHash": "a4266872792e2fbedaa0b542e270a033d5a63b88",
+			"commitMessage": "homework",
+			"authorName": "Татьяна Пятыхина",
+			"start": 1624884482709,
+			"duration": 437
+		},
+		{
+			"buildNumber": 70,
+			"commitHash": "a4266872792e2fbedaa0b542e270a033d5a63b88",
+			"commitMessage": "homework",
+			"authorName": "Татьяна Пятыхина",
+			"start": 1624884482709,
+			"duration": 437
+		},
+		{
+			"buildNumber": 67,
+			"commitHash": "a4266872792e2fbedaa0b542e270a033d5a63b88",
+			"commitMessage": "homework",
+			"authorName": "Татьяна Пятыхина",
+			"start": 1624884482709,
+			"duration": 437
+		},
+		{
+			"buildNumber": 69,
+			"commitHash": "a4266872792e2fbedaa0b542e270a033d5a63b88",
+			"commitMessage": "homework",
+			"authorName": "Татьяна Пятыхина",
+			"start": 1624884482709,
+			"duration": 437
+		},
+		{
+			"buildNumber": 66,
+			"commitHash": "a4266872792e2fbedaa0b542e270a033d5a63b88",
+			"commitMessage": "homework",
+			"authorName": "Татьяна Пятыхина",
+			"start": 1624884482709,
+			"duration": 437
+		},
+		{
+			"buildNumber": 65,
+			"commitHash": "a4266872792e2fbedaa0b542e270a033d5a63b88",
+			"commitMessage": "homework",
+			"authorName": "Татьяна Пятыхина",
+			"start": 1624884482709,
+			"duration": 437
+		},
+		{
+			"buildNumber": 64,
+			"commitHash": "a4266872792e2fbedaa0b542e270a033d5a63b88",
+			"commitMessage": "homework",
+			"authorName": "Татьяна Пятыхина",
+			"start": 1624884482710,
+			"duration": 436
+		},
+		{
+			"buildNumber": 68,
+			"commitHash": "a4266872792e2fbedaa0b542e270a033d5a63b88",
+			"commitMessage": "homework",
+			"authorName": "Татьяна Пятыхина",
+			"start": 1624884482709,
+			"duration": 437
+		},
+		{
+			"buildNumber": 61,
+			"commitHash": "a4266872792e2fbedaa0b542e270a033d5a63b88",
+			"commitMessage": "homework",
+			"authorName": "Татьяна Пятыхина",
+			"start": 1624884482710,
+			"duration": 436
+		},
+		{
+			"buildNumber": 63,
+			"commitHash": "a4266872792e2fbedaa0b542e270a033d5a63b88",
+			"commitMessage": "homework",
+			"authorName": "Татьяна Пятыхина",
+			"start": 1624884482710,
+			"duration": 436
+		},
+		{
+			"buildNumber": 62,
+			"commitHash": "a4266872792e2fbedaa0b542e270a033d5a63b88",
+			"commitMessage": "homework",
+			"authorName": "Татьяна Пятыхина",
+			"start": 1624884482710,
+			"duration": 436
+		},
+		{
+			"buildNumber": 60,
+			"commitHash": "a4266872792e2fbedaa0b542e270a033d5a63b88",
+			"commitMessage": "homework",
+			"authorName": "Татьяна Пятыхина",
+			"start": 1624884482710,
+			"duration": 436
+		},
+		{
+			"buildNumber": 57,
+			"commitHash": "a4266872792e2fbedaa0b542e270a033d5a63b88",
+			"commitMessage": "homework",
+			"authorName": "Татьяна Пятыхина",
+			"start": 1624884482710,
+			"duration": 436
+		},
+		{
+			"buildNumber": 56,
+			"commitHash": "a4266872792e2fbedaa0b542e270a033d5a63b88",
+			"commitMessage": "homework",
+			"authorName": "Татьяна Пятыхина",
+			"start": 1624884482710,
+			"duration": 436
+		},
+		{
+			"buildNumber": 59,
+			"commitHash": "a4266872792e2fbedaa0b542e270a033d5a63b88",
+			"commitMessage": "homework",
+			"authorName": "Татьяна Пятыхина",
+			"start": "2021-06-27T16:16:59.58",
+			"duration": null
+		},
+		{
+			"buildNumber": 58,
+			"commitHash": "a4266872792e2fbedaa0b542e270a033d5a63b88",
+			"commitMessage": "homework",
+			"authorName": "Татьяна Пятыхина",
+			"start": 1624884482710,
+			"duration": 436
+		},
+		{
+			"buildNumber": 55,
+			"commitHash": "a4266872792e2fbedaa0b542e270a033d5a63b88",
+			"commitMessage": "homework",
+			"authorName": "Татьяна Пятыхина",
+			"start": 1624884482710,
+			"duration": 436
+		},
+		{
+			"buildNumber": 54,
+			"commitHash": "a4266872792e2fbedaa0b542e270a033d5a63b88",
+			"commitMessage": "homework",
+			"authorName": "Татьяна Пятыхина",
+			"start": 1624884482710,
+			"duration": 436
+		},
+		{
+			"buildNumber": 53,
+			"commitHash": "a4266872792e2fbedaa0b542e270a033d5a63b88",
+			"commitMessage": "homework",
+			"authorName": "Татьяна Пятыхина",
+			"start": 1624884482710,
+			"duration": 436
+		},
+		{
+			"buildNumber": 52,
+			"commitHash": "a4266872792e2fbedaa0b542e270a033d5a63b88",
+			"commitMessage": "homework",
+			"authorName": "Татьяна Пятыхина",
+			"start": 1624884482710,
+			"duration": 436
+		},
+		{
+			"buildNumber": 48,
+			"commitHash": "a4266872792e2fbedaa0b542e270a033d5a63b88",
+			"commitMessage": "homework",
+			"authorName": "Татьяна Пятыхина",
+			"start": 1624884482710,
+			"duration": 436
+		},
+		{
+			"buildNumber": 49,
+			"commitHash": "a4266872792e2fbedaa0b542e270a033d5a63b88",
+			"commitMessage": "homework",
+			"authorName": "Татьяна Пятыхина",
+			"start": 1624884482710,
+			"duration": 436
+		},
+		{
+			"buildNumber": 50,
+			"commitHash": "a4266872792e2fbedaa0b542e270a033d5a63b88",
+			"commitMessage": "homework",
+			"authorName": "Татьяна Пятыхина",
+			"start": 1624884482710,
+			"duration": 436
+		},
+		{
+			"buildNumber": 51,
+			"commitHash": "a4266872792e2fbedaa0b542e270a033d5a63b88",
+			"commitMessage": "homework",
+			"authorName": "Татьяна Пятыхина",
+			"start": 1624884482710,
+			"duration": 436
+		},
+		{
+			"buildNumber": 72,
+			"commitHash": "a4266872792e2fbedaa0b542e270a033d5a63b88",
+			"commitMessage": "homework",
+			"authorName": "Татьяна Пятыхина",
+			"start": 1624884485195,
+			"duration": 429
+		},
+		{
+			"buildNumber": 71,
+			"commitHash": "a4266872792e2fbedaa0b542e270a033d5a63b88",
+			"commitMessage": "homework",
+			"authorName": "Татьяна Пятыхина",
+			"start": 1624884485196,
+			"duration": 428
+		},
+		{
+			"buildNumber": 68,
+			"commitHash": "a4266872792e2fbedaa0b542e270a033d5a63b88",
+			"commitMessage": "homework",
+			"authorName": "Татьяна Пятыхина",
+			"start": 1624884485196,
+			"duration": 428
+		},
+		{
+			"buildNumber": 70,
+			"commitHash": "a4266872792e2fbedaa0b542e270a033d5a63b88",
+			"commitMessage": "homework",
+			"authorName": "Татьяна Пятыхина",
+			"start": 1624884485196,
+			"duration": 428
+		},
+		{
+			"buildNumber": 69,
+			"commitHash": "a4266872792e2fbedaa0b542e270a033d5a63b88",
+			"commitMessage": "homework",
+			"authorName": "Татьяна Пятыхина",
+			"start": 1624884485196,
+			"duration": 428
+		},
+		{
+			"buildNumber": 66,
+			"commitHash": "a4266872792e2fbedaa0b542e270a033d5a63b88",
+			"commitMessage": "homework",
+			"authorName": "Татьяна Пятыхина",
+			"start": 1624884485197,
+			"duration": 427
+		},
+		{
+			"buildNumber": 67,
+			"commitHash": "a4266872792e2fbedaa0b542e270a033d5a63b88",
+			"commitMessage": "homework",
+			"authorName": "Татьяна Пятыхина",
+			"start": 1624884485197,
+			"duration": 427
+		},
+		{
+			"buildNumber": 64,
+			"commitHash": "a4266872792e2fbedaa0b542e270a033d5a63b88",
+			"commitMessage": "homework",
+			"authorName": "Татьяна Пятыхина",
+			"start": 1624884485197,
+			"duration": 427
+		},
+		{
+			"buildNumber": 65,
+			"commitHash": "a4266872792e2fbedaa0b542e270a033d5a63b88",
+			"commitMessage": "homework",
+			"authorName": "Татьяна Пятыхина",
+			"start": 1624884485197,
+			"duration": 427
+		},
+		{
+			"buildNumber": 63,
+			"commitHash": "a4266872792e2fbedaa0b542e270a033d5a63b88",
+			"commitMessage": "homework",
+			"authorName": "Татьяна Пятыхина",
+			"start": 1624884485197,
+			"duration": 427
+		},
+		{
+			"buildNumber": 62,
+			"commitHash": "a4266872792e2fbedaa0b542e270a033d5a63b88",
+			"commitMessage": "homework",
+			"authorName": "Татьяна Пятыхина",
+			"start": 1624884485197,
+			"duration": 427
+		},
+		{
+			"buildNumber": 61,
+			"commitHash": "a4266872792e2fbedaa0b542e270a033d5a63b88",
+			"commitMessage": "homework",
+			"authorName": "Татьяна Пятыхина",
+			"start": 1624884485197,
+			"duration": 427
+		},
+		{
+			"buildNumber": 60,
+			"commitHash": "a4266872792e2fbedaa0b542e270a033d5a63b88",
+			"commitMessage": "homework",
+			"authorName": "Татьяна Пятыхина",
+			"start": 1624884485197,
+			"duration": 427
+		},
+		{
+			"buildNumber": 59,
+			"commitHash": "a4266872792e2fbedaa0b542e270a033d5a63b88",
+			"commitMessage": "homework",
+			"authorName": "Татьяна Пятыхина",
+			"start": "2021-06-27T16:16:59.58",
+			"duration": null
+		},
+		{
+			"buildNumber": 58,
+			"commitHash": "a4266872792e2fbedaa0b542e270a033d5a63b88",
+			"commitMessage": "homework",
+			"authorName": "Татьяна Пятыхина",
+			"start": 1624884485198,
+			"duration": 426
+		},
+		{
+			"buildNumber": 55,
+			"commitHash": "a4266872792e2fbedaa0b542e270a033d5a63b88",
+			"commitMessage": "homework",
+			"authorName": "Татьяна Пятыхина",
+			"start": 1624884485198,
+			"duration": 426
+		},
+		{
+			"buildNumber": 56,
+			"commitHash": "a4266872792e2fbedaa0b542e270a033d5a63b88",
+			"commitMessage": "homework",
+			"authorName": "Татьяна Пятыхина",
+			"start": 1624884485198,
+			"duration": 426
+		},
+		{
+			"buildNumber": 57,
+			"commitHash": "a4266872792e2fbedaa0b542e270a033d5a63b88",
+			"commitMessage": "homework",
+			"authorName": "Татьяна Пятыхина",
+			"start": 1624884485198,
+			"duration": 426
+		},
+		{
+			"buildNumber": 54,
+			"commitHash": "a4266872792e2fbedaa0b542e270a033d5a63b88",
+			"commitMessage": "homework",
+			"authorName": "Татьяна Пятыхина",
+			"start": 1624884485198,
+			"duration": 426
+		},
+		{
+			"buildNumber": 52,
+			"commitHash": "a4266872792e2fbedaa0b542e270a033d5a63b88",
+			"commitMessage": "homework",
+			"authorName": "Татьяна Пятыхина",
+			"start": 1624884485198,
+			"duration": 426
+		},
+		{
+			"buildNumber": 53,
+			"commitHash": "a4266872792e2fbedaa0b542e270a033d5a63b88",
+			"commitMessage": "homework",
+			"authorName": "Татьяна Пятыхина",
+			"start": 1624884485198,
+			"duration": 426
+		},
+		{
+			"buildNumber": 51,
+			"commitHash": "a4266872792e2fbedaa0b542e270a033d5a63b88",
+			"commitMessage": "homework",
+			"authorName": "Татьяна Пятыхина",
+			"start": 1624884485199,
+			"duration": 425
+		},
+		{
+			"buildNumber": 50,
+			"commitHash": "a4266872792e2fbedaa0b542e270a033d5a63b88",
+			"commitMessage": "homework",
+			"authorName": "Татьяна Пятыхина",
+			"start": 1624884485199,
+			"duration": 425
+		},
+		{
+			"buildNumber": 49,
+			"commitHash": "a4266872792e2fbedaa0b542e270a033d5a63b88",
+			"commitMessage": "homework",
+			"authorName": "Татьяна Пятыхина",
+			"start": 1624884485199,
+			"duration": 425
+		},
+		{
+			"buildNumber": 48,
+			"commitHash": "a4266872792e2fbedaa0b542e270a033d5a63b88",
+			"commitMessage": "homework",
+			"authorName": "Татьяна Пятыхина",
+			"start": 1624884485199,
+			"duration": 425
+		},
+		{
+			"buildNumber": 72,
+			"commitHash": "a4266872792e2fbedaa0b542e270a033d5a63b88",
+			"commitMessage": "homework",
+			"authorName": "Татьяна Пятыхина",
+			"start": 1624884494011,
+			"duration": 424
+		},
+		{
+			"buildNumber": 70,
+			"commitHash": "a4266872792e2fbedaa0b542e270a033d5a63b88",
+			"commitMessage": "homework",
+			"authorName": "Татьяна Пятыхина",
+			"start": 1624884494011,
+			"duration": 424
+		},
+		{
+			"buildNumber": 71,
+			"commitHash": "a4266872792e2fbedaa0b542e270a033d5a63b88",
+			"commitMessage": "homework",
+			"authorName": "Татьяна Пятыхина",
+			"start": 1624884494011,
+			"duration": 424
+		},
+		{
+			"buildNumber": 69,
+			"commitHash": "a4266872792e2fbedaa0b542e270a033d5a63b88",
+			"commitMessage": "homework",
+			"authorName": "Татьяна Пятыхина",
+			"start": 1624884494011,
+			"duration": 424
+		},
+		{
+			"buildNumber": 68,
+			"commitHash": "a4266872792e2fbedaa0b542e270a033d5a63b88",
+			"commitMessage": "homework",
+			"authorName": "Татьяна Пятыхина",
+			"start": 1624884494011,
+			"duration": 424
+		},
+		{
+			"buildNumber": 67,
+			"commitHash": "a4266872792e2fbedaa0b542e270a033d5a63b88",
+			"commitMessage": "homework",
+			"authorName": "Татьяна Пятыхина",
+			"start": 1624884494011,
+			"duration": 424
+		},
+		{
+			"buildNumber": 65,
+			"commitHash": "a4266872792e2fbedaa0b542e270a033d5a63b88",
+			"commitMessage": "homework",
+			"authorName": "Татьяна Пятыхина",
+			"start": 1624884494011,
+			"duration": 424
+		},
+		{
+			"buildNumber": 66,
+			"commitHash": "a4266872792e2fbedaa0b542e270a033d5a63b88",
+			"commitMessage": "homework",
+			"authorName": "Татьяна Пятыхина",
+			"start": 1624884494011,
+			"duration": 424
+		},
+		{
+			"buildNumber": 63,
+			"commitHash": "a4266872792e2fbedaa0b542e270a033d5a63b88",
+			"commitMessage": "homework",
+			"authorName": "Татьяна Пятыхина",
+			"start": 1624884494011,
+			"duration": 424
+		},
+		{
+			"buildNumber": 62,
+			"commitHash": "a4266872792e2fbedaa0b542e270a033d5a63b88",
+			"commitMessage": "homework",
+			"authorName": "Татьяна Пятыхина",
+			"start": 1624884494011,
+			"duration": 424
+		},
+		{
+			"buildNumber": 64,
+			"commitHash": "a4266872792e2fbedaa0b542e270a033d5a63b88",
+			"commitMessage": "homework",
+			"authorName": "Татьяна Пятыхина",
+			"start": 1624884494011,
+			"duration": 424
+		},
+		{
+			"buildNumber": 61,
+			"commitHash": "a4266872792e2fbedaa0b542e270a033d5a63b88",
+			"commitMessage": "homework",
+			"authorName": "Татьяна Пятыхина",
+			"start": 1624884494011,
+			"duration": 424
+		},
+		{
+			"buildNumber": 60,
+			"commitHash": "a4266872792e2fbedaa0b542e270a033d5a63b88",
+			"commitMessage": "homework",
+			"authorName": "Татьяна Пятыхина",
+			"start": 1624884494011,
+			"duration": 424
+		},
+		{
+			"buildNumber": 59,
+			"commitHash": "a4266872792e2fbedaa0b542e270a033d5a63b88",
+			"commitMessage": "homework",
+			"authorName": "Татьяна Пятыхина",
+			"start": "2021-06-27T16:16:59.58",
+			"duration": null
+		},
+		{
+			"buildNumber": 58,
+			"commitHash": "a4266872792e2fbedaa0b542e270a033d5a63b88",
+			"commitMessage": "homework",
+			"authorName": "Татьяна Пятыхина",
+			"start": 1624884494011,
+			"duration": 424
+		},
+		{
+			"buildNumber": 57,
+			"commitHash": "a4266872792e2fbedaa0b542e270a033d5a63b88",
+			"commitMessage": "homework",
+			"authorName": "Татьяна Пятыхина",
+			"start": 1624884494011,
+			"duration": 424
+		},
+		{
+			"buildNumber": 55,
+			"commitHash": "a4266872792e2fbedaa0b542e270a033d5a63b88",
+			"commitMessage": "homework",
+			"authorName": "Татьяна Пятыхина",
+			"start": 1624884494011,
+			"duration": 424
+		},
+		{
+			"buildNumber": 56,
+			"commitHash": "a4266872792e2fbedaa0b542e270a033d5a63b88",
+			"commitMessage": "homework",
+			"authorName": "Татьяна Пятыхина",
+			"start": 1624884494011,
+			"duration": 424
+		},
+		{
+			"buildNumber": 54,
+			"commitHash": "a4266872792e2fbedaa0b542e270a033d5a63b88",
+			"commitMessage": "homework",
+			"authorName": "Татьяна Пятыхина",
+			"start": 1624884494011,
+			"duration": 424
+		},
+		{
+			"buildNumber": 52,
+			"commitHash": "a4266872792e2fbedaa0b542e270a033d5a63b88",
+			"commitMessage": "homework",
+			"authorName": "Татьяна Пятыхина",
+			"start": 1624884494012,
+			"duration": 423
+		},
+		{
+			"buildNumber": 53,
+			"commitHash": "a4266872792e2fbedaa0b542e270a033d5a63b88",
+			"commitMessage": "homework",
+			"authorName": "Татьяна Пятыхина",
+			"start": 1624884494012,
+			"duration": 423
+		},
+		{
+			"buildNumber": 51,
+			"commitHash": "a4266872792e2fbedaa0b542e270a033d5a63b88",
+			"commitMessage": "homework",
+			"authorName": "Татьяна Пятыхина",
+			"start": 1624884494012,
+			"duration": 423
+		},
+		{
+			"buildNumber": 50,
+			"commitHash": "a4266872792e2fbedaa0b542e270a033d5a63b88",
+			"commitMessage": "homework",
+			"authorName": "Татьяна Пятыхина",
+			"start": 1624884494012,
+			"duration": 423
+		},
+		{
+			"buildNumber": 49,
+			"commitHash": "a4266872792e2fbedaa0b542e270a033d5a63b88",
+			"commitMessage": "homework",
+			"authorName": "Татьяна Пятыхина",
+			"start": 1624884494012,
+			"duration": 423
+		},
+		{
+			"buildNumber": 48,
+			"commitHash": "a4266872792e2fbedaa0b542e270a033d5a63b88",
+			"commitMessage": "homework",
+			"authorName": "Татьяна Пятыхина",
+			"start": 1624884494012,
+			"duration": 423
+		},
+		{
+			"buildNumber": 72,
+			"commitHash": "a4266872792e2fbedaa0b542e270a033d5a63b88",
+			"commitMessage": "homework",
+			"authorName": "Татьяна Пятыхина",
+			"start": 1624884495610,
+			"duration": 0
+		},
+		{
+			"buildNumber": 70,
+			"commitHash": "a4266872792e2fbedaa0b542e270a033d5a63b88",
+			"commitMessage": "homework",
+			"authorName": "Татьяна Пятыхина",
+			"start": 1624884495611,
+			"duration": 0
+		},
+		{
+			"buildNumber": 69,
+			"commitHash": "a4266872792e2fbedaa0b542e270a033d5a63b88",
+			"commitMessage": "homework",
+			"authorName": "Татьяна Пятыхина",
+			"start": 1624884495611,
+			"duration": 0
+		},
+		{
+			"buildNumber": 71,
+			"commitHash": "a4266872792e2fbedaa0b542e270a033d5a63b88",
+			"commitMessage": "homework",
+			"authorName": "Татьяна Пятыхина",
+			"start": 1624884495611,
+			"duration": 0
+		},
+		{
+			"buildNumber": 65,
+			"commitHash": "a4266872792e2fbedaa0b542e270a033d5a63b88",
+			"commitMessage": "homework",
+			"authorName": "Татьяна Пятыхина",
+			"start": 1624884495612,
+			"duration": 0
+		},
+		{
+			"buildNumber": 67,
+			"commitHash": "a4266872792e2fbedaa0b542e270a033d5a63b88",
+			"commitMessage": "homework",
+			"authorName": "Татьяна Пятыхина",
+			"start": 1624884495612,
+			"duration": 0
+		},
+		{
+			"buildNumber": 66,
+			"commitHash": "a4266872792e2fbedaa0b542e270a033d5a63b88",
+			"commitMessage": "homework",
+			"authorName": "Татьяна Пятыхина",
+			"start": 1624884495612,
+			"duration": 0
+		},
+		{
+			"buildNumber": 68,
+			"commitHash": "a4266872792e2fbedaa0b542e270a033d5a63b88",
+			"commitMessage": "homework",
+			"authorName": "Татьяна Пятыхина",
+			"start": 1624884495611,
+			"duration": 0
+		},
+		{
+			"buildNumber": 64,
+			"commitHash": "a4266872792e2fbedaa0b542e270a033d5a63b88",
+			"commitMessage": "homework",
+			"authorName": "Татьяна Пятыхина",
+			"start": 1624884495612,
+			"duration": 0
+		},
+		{
+			"buildNumber": 63,
+			"commitHash": "a4266872792e2fbedaa0b542e270a033d5a63b88",
+			"commitMessage": "homework",
+			"authorName": "Татьяна Пятыхина",
+			"start": 1624884495612,
+			"duration": 0
+		},
+		{
+			"buildNumber": 61,
+			"commitHash": "a4266872792e2fbedaa0b542e270a033d5a63b88",
+			"commitMessage": "homework",
+			"authorName": "Татьяна Пятыхина",
+			"start": 1624884495612,
+			"duration": 0
+		},
+		{
+			"buildNumber": 62,
+			"commitHash": "a4266872792e2fbedaa0b542e270a033d5a63b88",
+			"commitMessage": "homework",
+			"authorName": "Татьяна Пятыхина",
+			"start": 1624884495612,
+			"duration": 0
+		},
+		{
+			"buildNumber": 60,
+			"commitHash": "a4266872792e2fbedaa0b542e270a033d5a63b88",
+			"commitMessage": "homework",
+			"authorName": "Татьяна Пятыхина",
+			"start": 1624884495613,
+			"duration": 0
+		},
+		{
+			"buildNumber": 56,
+			"commitHash": "a4266872792e2fbedaa0b542e270a033d5a63b88",
+			"commitMessage": "homework",
+			"authorName": "Татьяна Пятыхина",
+			"start": 1624884495613,
+			"duration": 0
+		},
+		{
+			"buildNumber": 59,
+			"commitHash": "a4266872792e2fbedaa0b542e270a033d5a63b88",
+			"commitMessage": "homework",
+			"authorName": "Татьяна Пятыхина",
+			"start": "2021-06-27T16:16:59.58",
+			"duration": null
+		},
+		{
+			"buildNumber": 57,
+			"commitHash": "a4266872792e2fbedaa0b542e270a033d5a63b88",
+			"commitMessage": "homework",
+			"authorName": "Татьяна Пятыхина",
+			"start": 1624884495613,
+			"duration": 0
+		},
+		{
+			"buildNumber": 58,
+			"commitHash": "a4266872792e2fbedaa0b542e270a033d5a63b88",
+			"commitMessage": "homework",
+			"authorName": "Татьяна Пятыхина",
+			"start": 1624884495613,
+			"duration": 0
+		},
+		{
+			"buildNumber": 54,
+			"commitHash": "a4266872792e2fbedaa0b542e270a033d5a63b88",
+			"commitMessage": "homework",
+			"authorName": "Татьяна Пятыхина",
+			"start": 1624884495613,
+			"duration": 0
+		},
+		{
+			"buildNumber": 55,
+			"commitHash": "a4266872792e2fbedaa0b542e270a033d5a63b88",
+			"commitMessage": "homework",
+			"authorName": "Татьяна Пятыхина",
+			"start": 1624884495613,
+			"duration": 0
+		},
+		{
+			"buildNumber": 53,
+			"commitHash": "a4266872792e2fbedaa0b542e270a033d5a63b88",
+			"commitMessage": "homework",
+			"authorName": "Татьяна Пятыхина",
+			"start": 1624884495613,
+			"duration": 0
+		},
+		{
+			"buildNumber": 52,
+			"commitHash": "a4266872792e2fbedaa0b542e270a033d5a63b88",
+			"commitMessage": "homework",
+			"authorName": "Татьяна Пятыхина",
+			"start": 1624884495614,
+			"duration": 0
+		},
+		{
+			"buildNumber": 51,
+			"commitHash": "a4266872792e2fbedaa0b542e270a033d5a63b88",
+			"commitMessage": "homework",
+			"authorName": "Татьяна Пятыхина",
+			"start": 1624884495614,
+			"duration": 0
+		},
+		{
+			"buildNumber": 50,
+			"commitHash": "a4266872792e2fbedaa0b542e270a033d5a63b88",
+			"commitMessage": "homework",
+			"authorName": "Татьяна Пятыхина",
+			"start": 1624884495614,
+			"duration": 0
+		},
+		{
+			"buildNumber": 49,
+			"commitHash": "a4266872792e2fbedaa0b542e270a033d5a63b88",
+			"commitMessage": "homework",
+			"authorName": "Татьяна Пятыхина",
+			"start": 1624884495614,
+			"duration": 0
+		},
+		{
+			"buildNumber": 48,
+			"commitHash": "a4266872792e2fbedaa0b542e270a033d5a63b88",
+			"commitMessage": "homework",
+			"authorName": "Татьяна Пятыхина",
+			"start": 1624884495614,
+			"duration": 0
+		}
+	]
 }
