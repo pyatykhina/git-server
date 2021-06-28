@@ -6,6 +6,9 @@ $grey: #E6E6E6;
 $grey-hovered: #DBDBDB;
 $grey-border: #B3B3B3;
 
+$color-disabled: #7F7F7F;
+$background-disabled: #F2F2F2;
+
 .button {
     padding: 8px 18px 9px 18px;
     border: 2px solid transparent;
@@ -20,6 +23,11 @@ $grey-border: #B3B3B3;
     &:focus {
         border: 2px solid $yellow-border;
     }
+
+    &:disabled {
+        background-color: $background-disabled;
+        color: $color-disabled;
+    }
 }
 
 .secondary {
@@ -31,5 +39,10 @@ $grey-border: #B3B3B3;
 
     &:focus {
         border: 2px solid $grey-border;
+    }
+
+    &:disabled {
+        background-color: $background-disabled;
+        color: $color-disabled;
     }
 }

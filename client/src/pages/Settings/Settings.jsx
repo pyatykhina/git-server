@@ -1,5 +1,5 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useState } from "react";
+import { Link, useHistory } from "react-router-dom";
 import "./Settings.scss";
 import { editSettings } from "../../redux/middlewares";
 import { useDispatch } from "react-redux";
@@ -9,6 +9,8 @@ import Button from "../../components/Button";
 
 function Settings() {
     const dispatch = useDispatch();
+    const history = useHistory();
+    const [disabledButtons, setDisabledButtons] = useState(false);
 
     const saveSettings = e => {
         e.preventDefault();
@@ -24,7 +26,10 @@ function Settings() {
             period: inputs["period"].value || 10
         };
 
-        dispatch(editSettings(config));
+        setDisabledButtons(true);
+
+        dispatch(editSettings(config))
+            .then(() => history.push("/"));
     }
 
     return (
@@ -44,8 +49,8 @@ function Settings() {
                     <TextField name="period" label="Synchronize every" placeholder="10" variant="inline" />minutes
 
                     <div className="form__inputs-buttons">
-                        <div className="form__inputs-buttons-button"><Button title="Save" type="submit" /></div>
-                        <Link to="/"><Button title="Cancel" variant="secondary" /></Link>
+                        <div className="form__inputs-buttons-button"><Button title="Save" type="submit" disabled={disabledButtons} /></div>
+                        <Link to="/"><Button title="Cancel" variant="secondary" disabled={disabledButtons} /></Link>
                     </div>
                 </form>
             </div>
