@@ -1,22 +1,28 @@
 import React, { useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 import "./Details.scss";
 import { useDispatch, useSelector } from "react-redux";
-import { getBuild, getLogs } from "../../redux/middlewares";
+import { getBuild, getLogs, addBuildToQueue } from "../../redux/middlewares";
 
 import IconButton from "../../components/IconButton";
 import Build from "../../components/Build";
 
 function Details(props) {
     const dispatch = useDispatch();
+    const history = useHistory();
 
     useEffect(() => {
         dispatch(getBuild(props.match.params.id));
         dispatch(getLogs(props.match.params.id));
-    }, [])
+    }, [props.match.params.id])
 
     const repoName = useSelector(state => state.settings.repoName);
     const build = useSelector(state => state.build);
+
+    const rebuildCommit = () => {
+        dispatch(addBuildToQueue(build.commitHash))
+            .then(buildId => history.push(`/build/${buildId}`));
+    }
 
     return (
         <>
@@ -25,7 +31,7 @@ function Details(props) {
                     {repoName?.split("/")[3]}/{repoName?.split("/")[4].split(".")[0]}
                 </div>
                 <div className="header-buttons">
-                    <div className="header-button"><IconButton icon="rebuild" title="Rebuild" /></div>
+                    <div className="header-button"><IconButton icon="rebuild" title="Rebuild" onClick={rebuildCommit} /></div>
                     <Link to="/settings"><IconButton icon="settings" /></Link>
                 </div>
             </header>
