@@ -3,8 +3,8 @@ const db = require('../../db/database');
 const Builds = require('../../db/Builds');
 
 module.exports = async (req, res) => {
-    const offset = req.body.offset;
-    const limit = req.body.limit;
+    const offset = req.params.offset;
+    const limit = req.params.limit;
 
     await api.getAllBuilds(offset, limit)
         .then(response => {
@@ -19,7 +19,7 @@ module.exports = async (req, res) => {
         })
         .catch(error => {
             return res.status(error.response.status).json({ 
-                    error: error.response.statusText 
-                })
+                error: error.response.statusText 
+            })
         });
 };
