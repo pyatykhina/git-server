@@ -26,7 +26,7 @@ export const api = {
 
     getAllBuilds(offset, limit) {
         return axios
-            .get("/api/builds", {params: {offset, limit}})
+            .get(`/api/builds?offset=${offset}&limit=${limit}`)
             .then(response => {
                 if (response.status === 200) {
                     return response.data.allBuilds;

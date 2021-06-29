@@ -57,7 +57,7 @@ function History() {
                     />
                 </Link>
             ))}
-            {allBuilds.length > 0 && <Button title="Show more" variant="secondary" onClick={loadMoreBuilds} />}
+            {allBuilds.length > 0 && <Button title="Show more" variant="secondary" onClick={loadMoreBuilds} style={{marginBottom: 16}} />}
 
             {newBuildPopup && <NewBuildPopup onClose={closeNewBuildPopup} />}
         </>
