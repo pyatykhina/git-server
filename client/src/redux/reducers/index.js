@@ -22,7 +22,7 @@ const rootReducer = (state = initialState, action) => {
         case SET_ALL_BUILDS:
             return {
                 ...state,
-                allBuilds: action.allBuilds
+                allBuilds: state.allBuilds.concat(action.allBuilds)
             };
         case SET_BUILD:
             return {

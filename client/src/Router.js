@@ -24,7 +24,7 @@ function Router() {
         <main>
             <Switch>
               {
-                repository 
+                Object.keys(repository).length !== 0 
                   ? <Route path="/" exact component={History} />
                   : <Route path="/" exact component={Start} />
               }

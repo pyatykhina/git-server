@@ -13,9 +13,9 @@ module.exports = {
             .then(response => response);
     },
 
-    getAllBuilds() {
+    getAllBuilds(offset, limit) {
         return axiosInstance()
-            .get('/build/list')
+            .get(`/build/list?offset=${offset}&limit=${limit}`)
             .then(response => response.data);
     },
 

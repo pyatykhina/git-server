@@ -24,9 +24,9 @@ export const api = {
             .catch(error => error.response);
     },
 
-    getAllBuilds() {
+    getAllBuilds(offset, limit) {
         return axios
-            .get("/api/builds")
+            .get("/api/builds", {offset, limit})
             .then(response => {
                 if (response.status === 200) {
                     return response.data.allBuilds;

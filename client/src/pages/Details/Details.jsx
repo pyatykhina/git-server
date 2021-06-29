@@ -21,7 +21,7 @@ function Details(props) {
 
     const rebuildCommit = () => {
         dispatch(addBuildToQueue(build.commitHash))
-            .then(buildId => history.push(`/build/${buildId}`));
+            .then(buildId => buildId && history.push(`/build/${buildId}`));
     }
 
     return (

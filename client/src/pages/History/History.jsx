@@ -4,6 +4,7 @@ import "./History.scss";
 import { getAllBuilds } from "../../redux/middlewares";
 import { useDispatch, useSelector } from "react-redux";
 
+import Button from "../../components/Button";
 import IconButton from "../../components/IconButton";
 import Build from "../../components/Build";
 import NewBuildPopup from "../../components/NewBuildPopup";
@@ -26,6 +27,10 @@ function History() {
 
     const repoName = useSelector(state => state.settings.repoName);
     const allBuilds = useSelector(state => state.allBuilds);
+
+    const loadMoreBuilds = () => {
+        dispatch(getAllBuilds(allBuilds.length - 1, 25));
+    }
 
     return (
         <>
@@ -52,6 +57,7 @@ function History() {
                     />
                 </Link>
             ))}
+            {allBuilds.length > 0 && <Button title="Show more" variant="secondary" onClick={loadMoreBuilds} />}
 
             {newBuildPopup && <NewBuildPopup onClose={closeNewBuildPopup} />}
         </>

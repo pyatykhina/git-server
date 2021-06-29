@@ -15,7 +15,7 @@ const NewBuildPopup = props => {
         e.preventDefault();
         const inputs = document.getElementsByClassName("textfield__input");
         dispatch(addBuildToQueue(inputs["commitHash"].value))
-            .then(buildId => history.push(`/build/${buildId}`));
+            .then(buildId => buildId && history.push(`/build/${buildId}`));
     }
 
     return (

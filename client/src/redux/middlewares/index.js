@@ -30,9 +30,9 @@ export const editSettings = config => dispatch => {
         });
 }
 
-export const getAllBuilds = () => dispatch => {
+export const getAllBuilds = (offset = 0, limit = 25) => dispatch => {
     return api
-        .getAllBuilds()
+        .getAllBuilds(offset, limit)
         .then(data => {
             dispatch(setAllBuilds(data));
             return data;

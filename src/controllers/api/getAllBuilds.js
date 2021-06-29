@@ -3,7 +3,10 @@ const db = require('../../db/database');
 const Builds = require('../../db/Builds');
 
 module.exports = async (req, res) => {
-    await api.getAllBuilds()
+    const offset = req.body.offset;
+    const limit = req.body.limit;
+
+    await api.getAllBuilds(offset, limit)
         .then(response => {
             response.data.forEach(async item => {
                 const buildsFile = new Builds(item);
