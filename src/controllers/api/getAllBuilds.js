@@ -3,8 +3,8 @@ const db = require('../../db/database');
 const Builds = require('../../db/Builds');
 
 module.exports = async (req, res) => {
-    const offset = req.params.offset;
-    const limit = req.params.limit;
+    const offset = req.query.offset;
+    const limit = req.query.limit;
 
     await api.getAllBuilds(offset, limit)
         .then(response => {
