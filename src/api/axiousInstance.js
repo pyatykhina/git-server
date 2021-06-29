@@ -1,5 +1,4 @@
 const axios = require('axios');
-const accessToken = require('../../token');
 
 module.exports = function getAxiosInstance() {
     return axios.create({
@@ -8,7 +7,7 @@ module.exports = function getAxiosInstance() {
         headers: {
             Accept: 'application/json',
             'Content-Type': 'application/json',
-            Authorization: `Bearer ${accessToken}`
+            Authorization: `Bearer ${process.env.TOKEN}`
         }
     });
 }
