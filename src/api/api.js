@@ -25,6 +25,12 @@ module.exports = {
             .then(response => response.data);
     },
 
+    startBuild(config) {
+        return axiosInstance()
+            .post('/build/start', config)
+            .then(response => response.data);
+    },
+
     getBuild(buildId) {
         return axiosInstance()
             .get(`/build/details?buildId=${buildId}`)

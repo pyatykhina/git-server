@@ -23,12 +23,16 @@ module.exports = async (req, res) => {
         commitHash: commitHash,
         branchName: branch,
         authorName: commit[1],
-        start: Date.now(),
+        start: new Date().toISOString(),
         duration: 0
     };
 
     await api.addBuildToQueue(config)
-        .then(response => {
+        .then(async response => {
+            await api.startBuild({
+                buildId: response.data.id,
+                dateTime: new Date().toISOString()
+            })
             return res.status(200).json({
                 build: response.data
             });
