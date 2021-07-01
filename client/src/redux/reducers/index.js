@@ -9,7 +9,7 @@ export const initialState = {
     settings: {},
     allBuilds: [],
     build: {},
-    logs: {}
+    logs: ""
 };
 
 const rootReducer = (state = initialState, action) => {

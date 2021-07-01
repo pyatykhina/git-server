@@ -27,54 +27,55 @@ module.exports = async (req, res) => {
         duration: 0
     };
 
-    await api.addBuildToQueue(config)
-        .then(async response => {
-            await api.startBuild({
-                buildId: response.data.id,
-                dateTime: new Date().toISOString()
-            })
-            .then(response => execBuild(JSON.parse(response)))
-            .catch(error => console.log('error', error.response));
-            return res.status(200).json({
-                build: response.data
-            });
-        })
-        .catch(error => {
-            return res.status(error.response.status).json({ 
-                error: error.response.statusText 
-            })
+    try {
+        const build = (await api.addBuildToQueue(config));
+        const execConfig = await api.startBuild({
+            buildId: build.data.id,
+            dateTime: new Date().toISOString()
         });
+        execBuild(JSON.parse(execConfig));
+        return res.status(200).json({
+            build: build.data
+        });
+    } 
+    catch (error) {
+        return res.status(500).json({ 
+            error: error
+        })
+    }
 };
 
 const execBuild = async ({ buildId, dateTime }) => {
-    await api.getSettings()
-        .then(response => {
-            const buildCommand = response.data.buildCommand;
-            const mainBranch = response.data.mainBranch;
+    const settings = await api.getSettings();
+    const buildCommand = settings.data.buildCommand;
+    const mainBranch = settings.data.mainBranch;
 
-            exec(`
-                cd local-repo
-                git checkout ${mainBranch}
-                ${buildCommand}
-            `, async (error, stdout, stderr) => {
-                if (error) {
-                    await api.finishBuild({
-                        buildId: buildId,
-                        duration: new Date() - new Date(dateTime),
-                        success: false,
-                        buildLog: stdout.toString()
-                    })
-                    return;
-                }
-
+    try {
+        exec(`
+            cd local-repo
+            git checkout ${mainBranch}
+            ${buildCommand}
+        `, async (error, stdout, stderr) => {
+            if (error) {
                 await api.finishBuild({
                     buildId: buildId,
                     duration: new Date() - new Date(dateTime),
-                    success: true,
+                    success: false,
                     buildLog: stdout.toString()
                 })
                 return;
-            });
-        })
-        .catch(error => console.log('error', error.response));;
+            }
+
+            await api.finishBuild({
+                buildId: buildId,
+                duration: new Date() - new Date(dateTime),
+                success: true,
+                buildLog: stdout.toString()
+            })
+            return;
+        });
+    }
+    catch (error) {
+        console.log('error', error)
+    }
 }

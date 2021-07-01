@@ -18,6 +18,7 @@ function Details(props) {
 
     const repoName = useSelector(state => state.settings.repoName);
     const build = useSelector(state => state.build);
+    const logs = useSelector(state => state.logs);
 
     const rebuildCommit = () => {
         dispatch(addBuildToQueue(build.commitHash))
@@ -49,7 +50,7 @@ function Details(props) {
                         duration={build.duration}
                     />
                 </Link>
-                <iframe className="logs" title="logs"></iframe>
+                <div className="logs" title="logs">{logs}</div>
             </>}
         </>
     )

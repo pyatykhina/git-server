@@ -6,7 +6,7 @@ module.exports = async (req, res) => {
     await api.getLogs(buildId)
         .then(response => {
             return res.status(200).json({ 
-                logs: response.data 
+                logs: response 
             })
         })
         .catch(error => {
