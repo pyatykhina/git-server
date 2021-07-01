@@ -1,10 +1,14 @@
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 import "./TextField.scss";
 
 import clear from "../../assets/images/clear.svg"
 
-const TextField = ({ label, placeholder, required, variant, ...props }) => {
+const TextField = ({ label, placeholder, required, variant, initialValue, ...props }) => {
     const [inputValue, setInputValue] = useState("");
+
+    useEffect(() => {
+        initialValue && setInputValue(initialValue);
+    }, [initialValue])
 
     const changeInput = e => {   
         e.target.classList.remove("textfield__input-error");

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link, useHistory } from "react-router-dom";
 import "./Settings.scss";
 import { editSettings } from "../../redux/middlewares";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 
 import TextField from "../../components/TextField";
 import Button from "../../components/Button";
@@ -11,6 +11,7 @@ function Settings() {
     const dispatch = useDispatch();
     const history = useHistory();
     const [disabledButtons, setDisabledButtons] = useState(false);
+    const settings = useSelector(state => state.settings);
 
     const saveSettings = e => {
         e.preventDefault();
@@ -43,10 +44,10 @@ function Settings() {
                 <h3 className="form__title">Settings</h3>
                 <h4 className="form__subtitle">Configure repository connection and synchronization settings.</h4>
                 <form className="form__inputs" onSubmit={saveSettings}>
-                    <TextField name="repoName" label="GitHub repository" placeholder="user-name / repo-name" required="true" />
-                    <TextField name="buildCommand" label="Build command" placeholder="npm ci && npm run build" required="true" />
-                    <TextField name="mainBranch" label="Main branch" placeholder="master" />
-                    <TextField name="period" label="Synchronize every" placeholder="10" variant="inline" />minutes
+                    <TextField name="repoName" label="GitHub repository" placeholder="user-name / repo-name" required="true" initialValue={settings.repoName} />
+                    <TextField name="buildCommand" label="Build command" placeholder="npm ci && npm run build" required="true" initialValue={settings.buildCommand} />
+                    <TextField name="mainBranch" label="Main branch" placeholder="master" initialValue={settings.mainBranch} />
+                    <TextField name="period" label="Synchronize every" placeholder="10" variant="inline" initialValue={settings.period} />minutes
 
                     <div className="form__inputs-buttons">
                         <div className="form__inputs-buttons-button"><Button title="Save" type="submit" disabled={disabledButtons} /></div>

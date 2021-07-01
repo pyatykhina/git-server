@@ -13,8 +13,11 @@ function History() {
     const [newBuildPopup, setNewBuildPopup] = useState(false);
     const dispatch = useDispatch();
 
+    const repoName = useSelector(state => state.settings.repoName);
+    const allBuilds = useSelector(state => state.allBuilds);
+
     useEffect(() => {
-        dispatch(getAllBuilds());
+        allBuilds.length === 0 && dispatch(getAllBuilds());
     }, [])
 
     const openNewBuildPopup = () => {
@@ -24,9 +27,6 @@ function History() {
     const closeNewBuildPopup = () => {
         setNewBuildPopup(false);
     }
-
-    const repoName = useSelector(state => state.settings.repoName);
-    const allBuilds = useSelector(state => state.allBuilds);
 
     const loadMoreBuilds = () => {
         dispatch(getAllBuilds(allBuilds.length - 1, 25));
