@@ -1,5 +1,5 @@
 const api = require('../../api/api');
-const{ exec } = require('child_process');
+const{ execSync } = require('child_process');
 
 module.exports = async (req, res) => {
     const config = {
@@ -9,7 +9,19 @@ module.exports = async (req, res) => {
         period: req.body.period
     };
 
-    exec(`git clone ${config.repoName} local-repo`);
+    try {
+        execSync(`
+            rm -rf local-repo
+            git clone ${config.repoName} local-repo
+            cd local-repo
+            git checkout ${config.mainBranch}
+        `);
+    } 
+    catch (error) {
+        return res.status(500).json({ 
+            error: 'Error while cloning repo' 
+        });
+    }
 
     await api.setSettings(config)
         .then(response => {

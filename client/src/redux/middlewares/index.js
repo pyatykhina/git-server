@@ -22,7 +22,7 @@ export const editSettings = config => dispatch => {
     return api
         .editSettings(config)
         .then(data => {
-            dispatch(getSettings());
+            data.status !== 500 && dispatch(getSettings());
             return data;
         })
         .catch(error => {

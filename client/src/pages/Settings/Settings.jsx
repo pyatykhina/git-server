@@ -11,6 +11,7 @@ function Settings() {
     const dispatch = useDispatch();
     const history = useHistory();
     const [disabledButtons, setDisabledButtons] = useState(false);
+    const [cloningError, setCloningError] = useState("");
     const settings = useSelector(state => state.settings);
 
     const saveSettings = e => {
@@ -30,7 +31,14 @@ function Settings() {
         setDisabledButtons(true);
 
         dispatch(editSettings(config))
-            .then(() => history.push("/"));
+            .then(response => {
+                if (response.status === 500) {
+                    setCloningError(response.data.error);
+                    setDisabledButtons(false);
+                } else {
+                    history.push("/");
+                }
+            })
     }
 
     return (
@@ -49,6 +57,7 @@ function Settings() {
                     <TextField name="mainBranch" label="Main branch" placeholder="master" initialValue={settings.mainBranch} />
                     <TextField name="period" label="Synchronize every" placeholder="10" variant="inline" initialValue={settings.period} />minutes
 
+                    {cloningError && <h4 className="form__subtitle" style={{ color: "#FF3333" }}>{cloningError}</h4>}
                     <div className="form__inputs-buttons">
                         <div className="form__inputs-buttons-button"><Button title="Save" type="submit" disabled={disabledButtons} /></div>
                         <Link to="/"><Button title="Cancel" variant="secondary" disabled={disabledButtons} /></Link>
