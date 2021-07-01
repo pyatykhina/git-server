@@ -33,7 +33,7 @@ module.exports = async (req, res) => {
                 buildId: response.data.id,
                 dateTime: new Date().toISOString()
             })
-            .then(response => execBuild(response))
+            .then(response => execBuild(JSON.parse(response)))
             .catch(error => console.log('error', error.response));
             return res.status(200).json({
                 build: response.data
