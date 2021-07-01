@@ -28,6 +28,12 @@ module.exports = {
     startBuild(config) {
         return axiosInstance()
             .post('/build/start', config)
+            .then(response => response.config.data);
+    },
+
+    finishBuild(config) {
+        return axiosInstance()
+            .post('/build/finish', config)
             .then(response => response.data);
     },
 

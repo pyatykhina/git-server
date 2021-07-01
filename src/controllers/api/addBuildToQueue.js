@@ -1,5 +1,5 @@
 const api = require('../../api/api');
-const{ execSync } = require('child_process');
+const{ exec, execSync } = require('child_process');
 
 module.exports = async (req, res) => {
     const commitHash = req.params.commitHash;
@@ -33,6 +33,8 @@ module.exports = async (req, res) => {
                 buildId: response.data.id,
                 dateTime: new Date().toISOString()
             })
+            .then(response => execBuild(response))
+            .catch(error => console.log('error', error.response));
             return res.status(200).json({
                 build: response.data
             });
@@ -43,3 +45,36 @@ module.exports = async (req, res) => {
             })
         });
 };
+
+const execBuild = async ({ buildId, dateTime }) => {
+    await api.getSettings()
+        .then(response => {
+            const buildCommand = response.data.buildCommand;
+            const mainBranch = response.data.mainBranch;
+
+            exec(`
+                cd local-repo
+                git checkout ${mainBranch}
+                ${buildCommand}
+            `, async (error, stdout, stderr) => {
+                if (error) {
+                    await api.finishBuild({
+                        buildId: buildId,
+                        duration: new Date() - new Date(dateTime),
+                        success: false,
+                        buildLog: stdout.toString()
+                    })
+                    return;
+                }
+
+                await api.finishBuild({
+                    buildId: buildId,
+                    duration: new Date() - new Date(dateTime),
+                    success: true,
+                    buildLog: stdout.toString()
+                })
+                return;
+            });
+        })
+        .catch(error => console.log('error', error.response));;
+}

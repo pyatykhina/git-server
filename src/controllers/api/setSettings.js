@@ -13,8 +13,6 @@ module.exports = async (req, res) => {
         execSync(`
             rm -rf local-repo
             git clone ${config.repoName} local-repo
-            cd local-repo
-            git checkout ${config.mainBranch}
         `);
     } 
     catch (error) {
