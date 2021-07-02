@@ -50,7 +50,7 @@ function Details(props) {
                         duration={build.duration}
                     />
                 </Link>
-                <div className="logs" title="logs">{logs}</div>
+                <span className="logs">{logs?.length > 0 ? logs : ""}</span>
             </>}
         </>
     )
