@@ -2,7 +2,7 @@
 	"settings": {
 		"id": "8b078823-5b82-4d1d-9d0c-eef4a210fa52",
 		"repoName": "https://github.com/tanyapyat/loft-taxi.git",
-		"buildCommand": "npm install",
+		"buildCommand": "npm install && npm run build",
 		"mainBranch": "master",
 		"period": 10
 	},
@@ -20605,6 +20605,606 @@
 			"commitMessage": "feat: order form",
 			"authorName": "Татьяна Пятыхина",
 			"start": "2021-07-01T19:20:39.053",
+			"duration": null
+		},
+		{
+			"buildNumber": 183,
+			"commitHash": "0a6b4377f4614bddc78695caf210b2514ade719c",
+			"commitMessage": "feat: order form",
+			"authorName": "Татьяна Пятыхина",
+			"start": "2021-07-02T07:35:21.852",
+			"duration": -10792263
+		},
+		{
+			"buildNumber": 181,
+			"commitHash": "0a6b4377f4614bddc78695caf210b2514ade719c",
+			"commitMessage": "feat: order form",
+			"authorName": "Татьяна Пятыхина",
+			"start": "2021-07-02T07:29:22.367",
+			"duration": -10792504
+		},
+		{
+			"buildNumber": 182,
+			"commitHash": "0a6b4377f4614bddc78695caf210b2514ade719c",
+			"commitMessage": "feat: order form",
+			"authorName": "Татьяна Пятыхина",
+			"start": "2021-07-02T07:33:38.172",
+			"duration": -10792318
+		},
+		{
+			"buildNumber": 179,
+			"commitHash": "0a6b4377f4614bddc78695caf210b2514ade719c",
+			"commitMessage": "feat: order form",
+			"authorName": "Татьяна Пятыхина",
+			"start": "2021-07-02T07:22:56.078",
+			"duration": -10792696
+		},
+		{
+			"buildNumber": 180,
+			"commitHash": "0a6b4377f4614bddc78695caf210b2514ade719c",
+			"commitMessage": "feat: order form",
+			"authorName": "Татьяна Пятыхина",
+			"start": "2021-07-02T07:26:24.66",
+			"duration": -10792413
+		},
+		{
+			"buildNumber": 175,
+			"commitHash": "0a6b4377f4614bddc78695caf210b2514ade719c",
+			"commitMessage": "feat: order form",
+			"authorName": "Татьяна Пятыхина",
+			"start": "2021-07-02T07:08:26.239",
+			"duration": -10793026
+		},
+		{
+			"buildNumber": 178,
+			"commitHash": "0a6b4377f4614bddc78695caf210b2514ade719c",
+			"commitMessage": "feat: order form",
+			"authorName": "Татьяна Пятыхина",
+			"start": "2021-07-02T07:20:05.318",
+			"duration": -10792440
+		},
+		{
+			"buildNumber": 174,
+			"commitHash": "0a6b4377f4614bddc78695caf210b2514ade719c",
+			"commitMessage": "feat: order form",
+			"authorName": "Татьяна Пятыхина",
+			"start": "2021-07-02T07:07:04.979",
+			"duration": -10792330
+		},
+		{
+			"buildNumber": 176,
+			"commitHash": "0a6b4377f4614bddc78695caf210b2514ade719c",
+			"commitMessage": "feat: order form",
+			"authorName": "Татьяна Пятыхина",
+			"start": "2021-07-02T07:14:34.903",
+			"duration": -10792497
+		},
+		{
+			"buildNumber": 177,
+			"commitHash": "0a6b4377f4614bddc78695caf210b2514ade719c",
+			"commitMessage": "feat: order form",
+			"authorName": "Татьяна Пятыхина",
+			"start": "2021-07-02T07:18:44.209",
+			"duration": -10792679
+		},
+		{
+			"buildNumber": 172,
+			"commitHash": "0a6b4377f4614bddc78695caf210b2514ade719c",
+			"commitMessage": "feat: order form",
+			"authorName": "Татьяна Пятыхина",
+			"start": "2021-07-02T07:00:11.766",
+			"duration": -10792963
+		},
+		{
+			"buildNumber": 171,
+			"commitHash": "0a6b4377f4614bddc78695caf210b2514ade719c",
+			"commitMessage": "feat: order form",
+			"authorName": "Татьяна Пятыхина",
+			"start": "2021-07-02T06:59:34.258",
+			"duration": -10792878
+		},
+		{
+			"buildNumber": 169,
+			"commitHash": "0a6b4377f4614bddc78695caf210b2514ade719c",
+			"commitMessage": "feat: order form",
+			"authorName": "Татьяна Пятыхина",
+			"start": "2021-07-02T06:38:48.859",
+			"duration": -10792830
+		},
+		{
+			"buildNumber": 170,
+			"commitHash": "0a6b4377f4614bddc78695caf210b2514ade719c",
+			"commitMessage": "feat: order form",
+			"authorName": "Татьяна Пятыхина",
+			"start": "2021-07-02T06:57:04.345",
+			"duration": -10792871
+		},
+		{
+			"buildNumber": 173,
+			"commitHash": "0a6b4377f4614bddc78695caf210b2514ade719c",
+			"commitMessage": "feat: order form",
+			"authorName": "Татьяна Пятыхина",
+			"start": "2021-07-02T07:04:25.039",
+			"duration": -10792130
+		},
+		{
+			"buildNumber": 167,
+			"commitHash": "0a6b4377f4614bddc78695caf210b2514ade719c",
+			"commitMessage": "feat: order form",
+			"authorName": "Татьяна Пятыхина",
+			"start": "2021-07-02T06:11:39.843",
+			"duration": -10792034
+		},
+		{
+			"buildNumber": 168,
+			"commitHash": "0a6b4377f4614bddc78695caf210b2514ade719c",
+			"commitMessage": "feat: order form",
+			"authorName": "Татьяна Пятыхина",
+			"start": "2021-07-02T06:33:19.371",
+			"duration": -10793213
+		},
+		{
+			"buildNumber": 166,
+			"commitHash": "0a6b4377f4614bddc78695caf210b2514ade719c",
+			"commitMessage": "feat: order form",
+			"authorName": "Татьяна Пятыхина",
+			"start": "2021-07-02T06:11:09.249",
+			"duration": -173285
+		},
+		{
+			"buildNumber": 164,
+			"commitHash": "0a6b4377f4614bddc78695caf210b2514ade719c",
+			"commitMessage": "feat: order form",
+			"authorName": "Татьяна Пятыхина",
+			"start": "2021-07-02T06:00:59.712",
+			"duration": 9122
+		},
+		{
+			"buildNumber": 163,
+			"commitHash": "0a6b4377f4614bddc78695caf210b2514ade719c",
+			"commitMessage": "feat: order form",
+			"authorName": "Татьяна Пятыхина",
+			"start": "2021-07-02T05:59:05.184",
+			"duration": 8188
+		},
+		{
+			"buildNumber": 165,
+			"commitHash": "0a6b4377f4614bddc78695caf210b2514ade719c",
+			"commitMessage": "feat: order form",
+			"authorName": "Татьяна Пятыхина",
+			"start": "2021-07-02T06:09:37.393",
+			"duration": 6928
+		},
+		{
+			"buildNumber": 161,
+			"commitHash": "0a6b4377f4614bddc78695caf210b2514ade719c",
+			"commitMessage": "feat: order form",
+			"authorName": "Татьяна Пятыхина",
+			"start": "2021-07-01T19:24:07.688",
+			"duration": null
+		},
+		{
+			"buildNumber": 162,
+			"commitHash": "0a6b4377f4614bddc78695caf210b2514ade719c",
+			"commitMessage": "feat: order form",
+			"authorName": "Татьяна Пятыхина",
+			"start": "2021-07-01T19:25:20.756",
+			"duration": 12156
+		},
+		{
+			"buildNumber": 159,
+			"commitHash": "0a6b4377f4614bddc78695caf210b2514ade719c",
+			"commitMessage": "feat: order form",
+			"authorName": "Татьяна Пятыхина",
+			"start": "2021-07-01T19:20:39.053",
+			"duration": null
+		},
+		{
+			"buildNumber": 160,
+			"commitHash": "0a6b4377f4614bddc78695caf210b2514ade719c",
+			"commitMessage": "feat: order form",
+			"authorName": "Татьяна Пятыхина",
+			"start": "2021-07-01T19:22:43.636",
+			"duration": null
+		},
+		{
+			"buildNumber": 184,
+			"commitHash": "0a6b4377f4614bddc78695caf210b2514ade719c",
+			"commitMessage": "feat: order form",
+			"authorName": "Татьяна Пятыхина",
+			"start": "2021-07-02T10:36:08.88",
+			"duration": null
+		},
+		{
+			"buildNumber": 183,
+			"commitHash": "0a6b4377f4614bddc78695caf210b2514ade719c",
+			"commitMessage": "feat: order form",
+			"authorName": "Татьяна Пятыхина",
+			"start": "2021-07-02T07:35:21.852",
+			"duration": -10792263
+		},
+		{
+			"buildNumber": 182,
+			"commitHash": "0a6b4377f4614bddc78695caf210b2514ade719c",
+			"commitMessage": "feat: order form",
+			"authorName": "Татьяна Пятыхина",
+			"start": "2021-07-02T07:33:38.172",
+			"duration": -10792318
+		},
+		{
+			"buildNumber": 181,
+			"commitHash": "0a6b4377f4614bddc78695caf210b2514ade719c",
+			"commitMessage": "feat: order form",
+			"authorName": "Татьяна Пятыхина",
+			"start": "2021-07-02T07:29:22.367",
+			"duration": -10792504
+		},
+		{
+			"buildNumber": 180,
+			"commitHash": "0a6b4377f4614bddc78695caf210b2514ade719c",
+			"commitMessage": "feat: order form",
+			"authorName": "Татьяна Пятыхина",
+			"start": "2021-07-02T07:26:24.66",
+			"duration": -10792413
+		},
+		{
+			"buildNumber": 179,
+			"commitHash": "0a6b4377f4614bddc78695caf210b2514ade719c",
+			"commitMessage": "feat: order form",
+			"authorName": "Татьяна Пятыхина",
+			"start": "2021-07-02T07:22:56.078",
+			"duration": -10792696
+		},
+		{
+			"buildNumber": 178,
+			"commitHash": "0a6b4377f4614bddc78695caf210b2514ade719c",
+			"commitMessage": "feat: order form",
+			"authorName": "Татьяна Пятыхина",
+			"start": "2021-07-02T07:20:05.318",
+			"duration": -10792440
+		},
+		{
+			"buildNumber": 177,
+			"commitHash": "0a6b4377f4614bddc78695caf210b2514ade719c",
+			"commitMessage": "feat: order form",
+			"authorName": "Татьяна Пятыхина",
+			"start": "2021-07-02T07:18:44.209",
+			"duration": -10792679
+		},
+		{
+			"buildNumber": 174,
+			"commitHash": "0a6b4377f4614bddc78695caf210b2514ade719c",
+			"commitMessage": "feat: order form",
+			"authorName": "Татьяна Пятыхина",
+			"start": "2021-07-02T07:07:04.979",
+			"duration": -10792330
+		},
+		{
+			"buildNumber": 172,
+			"commitHash": "0a6b4377f4614bddc78695caf210b2514ade719c",
+			"commitMessage": "feat: order form",
+			"authorName": "Татьяна Пятыхина",
+			"start": "2021-07-02T07:00:11.766",
+			"duration": -10792963
+		},
+		{
+			"buildNumber": 173,
+			"commitHash": "0a6b4377f4614bddc78695caf210b2514ade719c",
+			"commitMessage": "feat: order form",
+			"authorName": "Татьяна Пятыхина",
+			"start": "2021-07-02T07:04:25.039",
+			"duration": -10792130
+		},
+		{
+			"buildNumber": 176,
+			"commitHash": "0a6b4377f4614bddc78695caf210b2514ade719c",
+			"commitMessage": "feat: order form",
+			"authorName": "Татьяна Пятыхина",
+			"start": "2021-07-02T07:14:34.903",
+			"duration": -10792497
+		},
+		{
+			"buildNumber": 169,
+			"commitHash": "0a6b4377f4614bddc78695caf210b2514ade719c",
+			"commitMessage": "feat: order form",
+			"authorName": "Татьяна Пятыхина",
+			"start": "2021-07-02T06:38:48.859",
+			"duration": -10792830
+		},
+		{
+			"buildNumber": 170,
+			"commitHash": "0a6b4377f4614bddc78695caf210b2514ade719c",
+			"commitMessage": "feat: order form",
+			"authorName": "Татьяна Пятыхина",
+			"start": "2021-07-02T06:57:04.345",
+			"duration": -10792871
+		},
+		{
+			"buildNumber": 171,
+			"commitHash": "0a6b4377f4614bddc78695caf210b2514ade719c",
+			"commitMessage": "feat: order form",
+			"authorName": "Татьяна Пятыхина",
+			"start": "2021-07-02T06:59:34.258",
+			"duration": -10792878
+		},
+		{
+			"buildNumber": 175,
+			"commitHash": "0a6b4377f4614bddc78695caf210b2514ade719c",
+			"commitMessage": "feat: order form",
+			"authorName": "Татьяна Пятыхина",
+			"start": "2021-07-02T07:08:26.239",
+			"duration": -10793026
+		},
+		{
+			"buildNumber": 167,
+			"commitHash": "0a6b4377f4614bddc78695caf210b2514ade719c",
+			"commitMessage": "feat: order form",
+			"authorName": "Татьяна Пятыхина",
+			"start": "2021-07-02T06:11:39.843",
+			"duration": -10792034
+		},
+		{
+			"buildNumber": 166,
+			"commitHash": "0a6b4377f4614bddc78695caf210b2514ade719c",
+			"commitMessage": "feat: order form",
+			"authorName": "Татьяна Пятыхина",
+			"start": "2021-07-02T06:11:09.249",
+			"duration": -173285
+		},
+		{
+			"buildNumber": 164,
+			"commitHash": "0a6b4377f4614bddc78695caf210b2514ade719c",
+			"commitMessage": "feat: order form",
+			"authorName": "Татьяна Пятыхина",
+			"start": "2021-07-02T06:00:59.712",
+			"duration": 9122
+		},
+		{
+			"buildNumber": 168,
+			"commitHash": "0a6b4377f4614bddc78695caf210b2514ade719c",
+			"commitMessage": "feat: order form",
+			"authorName": "Татьяна Пятыхина",
+			"start": "2021-07-02T06:33:19.371",
+			"duration": -10793213
+		},
+		{
+			"buildNumber": 163,
+			"commitHash": "0a6b4377f4614bddc78695caf210b2514ade719c",
+			"commitMessage": "feat: order form",
+			"authorName": "Татьяна Пятыхина",
+			"start": "2021-07-02T05:59:05.184",
+			"duration": 8188
+		},
+		{
+			"buildNumber": 165,
+			"commitHash": "0a6b4377f4614bddc78695caf210b2514ade719c",
+			"commitMessage": "feat: order form",
+			"authorName": "Татьяна Пятыхина",
+			"start": "2021-07-02T06:09:37.393",
+			"duration": 6928
+		},
+		{
+			"buildNumber": 162,
+			"commitHash": "0a6b4377f4614bddc78695caf210b2514ade719c",
+			"commitMessage": "feat: order form",
+			"authorName": "Татьяна Пятыхина",
+			"start": "2021-07-01T19:25:20.756",
+			"duration": 12156
+		},
+		{
+			"buildNumber": 161,
+			"commitHash": "0a6b4377f4614bddc78695caf210b2514ade719c",
+			"commitMessage": "feat: order form",
+			"authorName": "Татьяна Пятыхина",
+			"start": "2021-07-01T19:24:07.688",
+			"duration": null
+		},
+		{
+			"buildNumber": 160,
+			"commitHash": "0a6b4377f4614bddc78695caf210b2514ade719c",
+			"commitMessage": "feat: order form",
+			"authorName": "Татьяна Пятыхина",
+			"start": "2021-07-01T19:22:43.636",
+			"duration": null
+		},
+		{
+			"buildNumber": 185,
+			"commitHash": "0a6b4377f4614bddc78695caf210b2514ade719c",
+			"commitMessage": "feat: order form",
+			"authorName": "Татьяна Пятыхина",
+			"start": "2021-07-02T10:38:03.616",
+			"duration": null
+		},
+		{
+			"buildNumber": 184,
+			"commitHash": "0a6b4377f4614bddc78695caf210b2514ade719c",
+			"commitMessage": "feat: order form",
+			"authorName": "Татьяна Пятыхина",
+			"start": "2021-07-02T10:36:08.88",
+			"duration": null
+		},
+		{
+			"buildNumber": 179,
+			"commitHash": "0a6b4377f4614bddc78695caf210b2514ade719c",
+			"commitMessage": "feat: order form",
+			"authorName": "Татьяна Пятыхина",
+			"start": "2021-07-02T07:22:56.078",
+			"duration": -10792696
+		},
+		{
+			"buildNumber": 182,
+			"commitHash": "0a6b4377f4614bddc78695caf210b2514ade719c",
+			"commitMessage": "feat: order form",
+			"authorName": "Татьяна Пятыхина",
+			"start": "2021-07-02T07:33:38.172",
+			"duration": -10792318
+		},
+		{
+			"buildNumber": 180,
+			"commitHash": "0a6b4377f4614bddc78695caf210b2514ade719c",
+			"commitMessage": "feat: order form",
+			"authorName": "Татьяна Пятыхина",
+			"start": "2021-07-02T07:26:24.66",
+			"duration": -10792413
+		},
+		{
+			"buildNumber": 181,
+			"commitHash": "0a6b4377f4614bddc78695caf210b2514ade719c",
+			"commitMessage": "feat: order form",
+			"authorName": "Татьяна Пятыхина",
+			"start": "2021-07-02T07:29:22.367",
+			"duration": -10792504
+		},
+		{
+			"buildNumber": 178,
+			"commitHash": "0a6b4377f4614bddc78695caf210b2514ade719c",
+			"commitMessage": "feat: order form",
+			"authorName": "Татьяна Пятыхина",
+			"start": "2021-07-02T07:20:05.318",
+			"duration": -10792440
+		},
+		{
+			"buildNumber": 176,
+			"commitHash": "0a6b4377f4614bddc78695caf210b2514ade719c",
+			"commitMessage": "feat: order form",
+			"authorName": "Татьяна Пятыхина",
+			"start": "2021-07-02T07:14:34.903",
+			"duration": -10792497
+		},
+		{
+			"buildNumber": 183,
+			"commitHash": "0a6b4377f4614bddc78695caf210b2514ade719c",
+			"commitMessage": "feat: order form",
+			"authorName": "Татьяна Пятыхина",
+			"start": "2021-07-02T07:35:21.852",
+			"duration": -10792263
+		},
+		{
+			"buildNumber": 177,
+			"commitHash": "0a6b4377f4614bddc78695caf210b2514ade719c",
+			"commitMessage": "feat: order form",
+			"authorName": "Татьяна Пятыхина",
+			"start": "2021-07-02T07:18:44.209",
+			"duration": -10792679
+		},
+		{
+			"buildNumber": 173,
+			"commitHash": "0a6b4377f4614bddc78695caf210b2514ade719c",
+			"commitMessage": "feat: order form",
+			"authorName": "Татьяна Пятыхина",
+			"start": "2021-07-02T07:04:25.039",
+			"duration": -10792130
+		},
+		{
+			"buildNumber": 174,
+			"commitHash": "0a6b4377f4614bddc78695caf210b2514ade719c",
+			"commitMessage": "feat: order form",
+			"authorName": "Татьяна Пятыхина",
+			"start": "2021-07-02T07:07:04.979",
+			"duration": -10792330
+		},
+		{
+			"buildNumber": 175,
+			"commitHash": "0a6b4377f4614bddc78695caf210b2514ade719c",
+			"commitMessage": "feat: order form",
+			"authorName": "Татьяна Пятыхина",
+			"start": "2021-07-02T07:08:26.239",
+			"duration": -10793026
+		},
+		{
+			"buildNumber": 171,
+			"commitHash": "0a6b4377f4614bddc78695caf210b2514ade719c",
+			"commitMessage": "feat: order form",
+			"authorName": "Татьяна Пятыхина",
+			"start": "2021-07-02T06:59:34.258",
+			"duration": -10792878
+		},
+		{
+			"buildNumber": 170,
+			"commitHash": "0a6b4377f4614bddc78695caf210b2514ade719c",
+			"commitMessage": "feat: order form",
+			"authorName": "Татьяна Пятыхина",
+			"start": "2021-07-02T06:57:04.345",
+			"duration": -10792871
+		},
+		{
+			"buildNumber": 169,
+			"commitHash": "0a6b4377f4614bddc78695caf210b2514ade719c",
+			"commitMessage": "feat: order form",
+			"authorName": "Татьяна Пятыхина",
+			"start": "2021-07-02T06:38:48.859",
+			"duration": -10792830
+		},
+		{
+			"buildNumber": 172,
+			"commitHash": "0a6b4377f4614bddc78695caf210b2514ade719c",
+			"commitMessage": "feat: order form",
+			"authorName": "Татьяна Пятыхина",
+			"start": "2021-07-02T07:00:11.766",
+			"duration": -10792963
+		},
+		{
+			"buildNumber": 168,
+			"commitHash": "0a6b4377f4614bddc78695caf210b2514ade719c",
+			"commitMessage": "feat: order form",
+			"authorName": "Татьяна Пятыхина",
+			"start": "2021-07-02T06:33:19.371",
+			"duration": -10793213
+		},
+		{
+			"buildNumber": 167,
+			"commitHash": "0a6b4377f4614bddc78695caf210b2514ade719c",
+			"commitMessage": "feat: order form",
+			"authorName": "Татьяна Пятыхина",
+			"start": "2021-07-02T06:11:39.843",
+			"duration": -10792034
+		},
+		{
+			"buildNumber": 166,
+			"commitHash": "0a6b4377f4614bddc78695caf210b2514ade719c",
+			"commitMessage": "feat: order form",
+			"authorName": "Татьяна Пятыхина",
+			"start": "2021-07-02T06:11:09.249",
+			"duration": -173285
+		},
+		{
+			"buildNumber": 165,
+			"commitHash": "0a6b4377f4614bddc78695caf210b2514ade719c",
+			"commitMessage": "feat: order form",
+			"authorName": "Татьяна Пятыхина",
+			"start": "2021-07-02T06:09:37.393",
+			"duration": 6928
+		},
+		{
+			"buildNumber": 164,
+			"commitHash": "0a6b4377f4614bddc78695caf210b2514ade719c",
+			"commitMessage": "feat: order form",
+			"authorName": "Татьяна Пятыхина",
+			"start": "2021-07-02T06:00:59.712",
+			"duration": 9122
+		},
+		{
+			"buildNumber": 163,
+			"commitHash": "0a6b4377f4614bddc78695caf210b2514ade719c",
+			"commitMessage": "feat: order form",
+			"authorName": "Татьяна Пятыхина",
+			"start": "2021-07-02T05:59:05.184",
+			"duration": 8188
+		},
+		{
+			"buildNumber": 162,
+			"commitHash": "0a6b4377f4614bddc78695caf210b2514ade719c",
+			"commitMessage": "feat: order form",
+			"authorName": "Татьяна Пятыхина",
+			"start": "2021-07-01T19:25:20.756",
+			"duration": 12156
+		},
+		{
+			"buildNumber": 161,
+			"commitHash": "0a6b4377f4614bddc78695caf210b2514ade719c",
+			"commitMessage": "feat: order form",
+			"authorName": "Татьяна Пятыхина",
+			"start": "2021-07-01T19:24:07.688",
 			"duration": null
 		}
 	]

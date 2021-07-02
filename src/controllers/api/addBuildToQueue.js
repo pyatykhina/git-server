@@ -57,7 +57,6 @@ const execBuild = async ({ buildId, dateTime }) => {
             git checkout ${mainBranch}
             ${buildCommand}
         `, async (error, stdout, stderr) => {
-            console.log('stdout', stderr + '\n' + stdout)
             if (error) {
                 await api.finishBuild({
                     buildId: buildId,

@@ -36,7 +36,6 @@ function Details(props) {
                     <Link to="/settings"><IconButton icon="settings" /></Link>
                 </div>
             </header>
-            {console.log('logs', JSON.parse(logs))}
             {build && <>
                 <Link to="/">
                     <Build 
@@ -51,7 +50,7 @@ function Details(props) {
                         duration={build.duration}
                     />
                 </Link>
-                <div className="logs" title="logs">{logs?.length > 0 ? JSON.parse(logs) : ""}</div>
+                <span className="logs">{logs?.length > 0 ? logs : ""}</span>
             </>}
         </>
     )
