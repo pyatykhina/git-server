@@ -59,7 +59,7 @@ const execBuild = async ({ buildId, dateTime }) => {
             if (error) {
                 await api.finishBuild({
                     buildId: buildId,
-                    duration: new Date() - new Date(dateTime),
+                    duration: new Date() - new Date(dateTime) + new Date().getTimezoneOffset()*60*1000,
                     success: false,
                     buildLog: stdout.toString()
                 })
@@ -68,7 +68,7 @@ const execBuild = async ({ buildId, dateTime }) => {
 
             await api.finishBuild({
                 buildId: buildId,
-                duration: new Date() - new Date(dateTime),
+                duration: new Date() - new Date(dateTime) + new Date().getTimezoneOffset()*60*1000,
                 success: true,
                 buildLog: stdout.toString()
             })
