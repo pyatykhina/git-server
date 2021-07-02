@@ -6,7 +6,7 @@ const settingsFolder = path.resolve(dbFolder, 'settings');
 const buildsFolder = path.resolve(dbFolder, 'builds');
 
 module.exports = {
-  PORT: 3000,
+  PORT: 5001,
 
   dbFolder,
   dbDumpFile,

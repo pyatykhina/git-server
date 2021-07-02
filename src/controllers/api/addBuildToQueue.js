@@ -1,5 +1,6 @@
 const api = require('../../api/api');
 const{ exec, execSync } = require('child_process');
+const serialize = require('serialize-javascript');
 
 module.exports = async (req, res) => {
     const commitHash = req.params.commitHash;
@@ -56,12 +57,13 @@ const execBuild = async ({ buildId, dateTime }) => {
             git checkout ${mainBranch}
             ${buildCommand}
         `, async (error, stdout, stderr) => {
+            console.log('stdout', stderr + '\n' + stdout)
             if (error) {
                 await api.finishBuild({
                     buildId: buildId,
                     duration: new Date() - new Date(dateTime) + new Date().getTimezoneOffset()*60*1000,
                     success: false,
-                    buildLog: stdout.toString()
+                    buildLog: serialize({logs: `<div>{${stderr} + \n + ${stdout}}</div>`})
                 })
                 return;
             }
@@ -70,7 +72,7 @@ const execBuild = async ({ buildId, dateTime }) => {
                 buildId: buildId,
                 duration: new Date() - new Date(dateTime) + new Date().getTimezoneOffset()*60*1000,
                 success: true,
-                buildLog: stdout.toString()
+                buildLog: serialize({logs: JSON.stringify(stdout)})
             })
             return;
         });
