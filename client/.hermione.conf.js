@@ -13,6 +13,12 @@ module.exports = {
     plugins: {
         "html-reporter/hermione": {
             path: "hermione-html-report"
-        }
+        },
+        "hermione-url-decorator": {
+            query: {
+                "enable_exp": "1"
+            }
+        },
+        "hermione-selenium-standalone-runner": true
     }
 };
