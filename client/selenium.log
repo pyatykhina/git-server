@@ -1,0 +1,65 @@
+15:07:12.356 INFO [GridLauncherV3.parse] - Selenium server version: 3.141.59, revision: e82be7d358
+15:07:12.391 INFO [GridLauncherV3.lambda$buildLaunchers$3] - Launching a standalone Selenium Server on port 4444
+2021-07-06 15:07:12.414:INFO::main: Logging initialized @165ms to org.seleniumhq.jetty9.util.log.StdErrLog
+15:07:12.530 INFO [WebDriverServlet.<init>] - Initialising WebDriverServlet
+15:07:12.567 INFO [SeleniumServer.boot] - Selenium Server is up and running on port 4444
+Selenium started
+15:07:14.192 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "chrome"
+}
+15:07:14.194 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.chrome.ChromeDriverService)
+Starting ChromeDriver 91.0.4472.101 (af52a90bf87030dd1523486a1cd3ae25c5d76c9b-refs/branch-heads/4472@{#1462}) on port 31008
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+15:07:14.645 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+15:07:14.654 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 240b1e589b82f7ba69a9b7d0d22ce13a (org.openqa.selenium.chrome.ChromeDriverService)
+15:07:16.002 INFO [ActiveSessions$1.onStop] - Removing session 240b1e589b82f7ba69a9b7d0d22ce13a (org.openqa.selenium.chrome.ChromeDriverService)
+15:07:16.003 WARN [ActiveSessions.lambda$null$0] - Caught exception closing session: 240b1e589b82f7ba69a9b7d0d22ce13a
+java.lang.IllegalStateException: Shutdown in progress
+	at java.base/java.lang.ApplicationShutdownHooks.remove(ApplicationShutdownHooks.java:82)
+	at java.base/java.lang.Runtime.removeShutdownHook(Runtime.java:244)
+	at org.openqa.selenium.io.TemporaryFilesystem.deleteBaseDir(TemporaryFilesystem.java:160)
+	at org.openqa.selenium.remote.server.ActiveSessions$3.onStop(ActiveSessions.java:85)
+	at org.openqa.selenium.remote.server.ActiveSessions.lambda$null$0(ActiveSessions.java:51)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.openqa.selenium.remote.server.ActiveSessions.lambda$new$1(ActiveSessions.java:49)
+	at com.google.common.cache.LocalCache.processPendingNotifications(LocalCache.java:1811)
+	at com.google.common.cache.LocalCache$Segment.runUnlockedCleanup(LocalCache.java:3463)
+	at com.google.common.cache.LocalCache$Segment.postWriteCleanup(LocalCache.java:3439)
+	at com.google.common.cache.LocalCache$Segment.remove(LocalCache.java:3073)
+	at com.google.common.cache.LocalCache.remove(LocalCache.java:4234)
+	at com.google.common.cache.LocalCache$LocalManualCache.invalidate(LocalCache.java:4898)
+	at org.openqa.selenium.remote.server.ActiveSessions.invalidate(ActiveSessions.java:103)
+	at org.openqa.selenium.remote.server.WebDriverServlet.handle(WebDriverServlet.java:264)
+	at org.openqa.selenium.remote.server.WebDriverServlet.doDelete(WebDriverServlet.java:133)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:713)
+	at org.openqa.selenium.remote.server.WebDriverServlet.service(WebDriverServlet.java:114)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.seleniumhq.jetty9.servlet.ServletHolder.handle(ServletHolder.java:865)
+	at org.seleniumhq.jetty9.servlet.ServletHandler.doHandle(ServletHandler.java:535)
+	at org.seleniumhq.jetty9.server.handler.ScopedHandler.handle(ScopedHandler.java:146)
+	at org.seleniumhq.jetty9.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.seleniumhq.jetty9.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257)
+	at org.seleniumhq.jetty9.server.handler.ContextHandler.doHandle(ContextHandler.java:1340)
+	at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
+	at org.seleniumhq.jetty9.servlet.ServletHandler.doScope(ServletHandler.java:473)
+	at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
+	at org.seleniumhq.jetty9.server.handler.ContextHandler.doScope(ContextHandler.java:1242)
+	at org.seleniumhq.jetty9.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+	at org.seleniumhq.jetty9.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.seleniumhq.jetty9.server.Server.handle(Server.java:503)
+	at org.seleniumhq.jetty9.server.HttpChannel.handle(HttpChannel.java:364)
+	at org.seleniumhq.jetty9.server.HttpConnection.onFillable(HttpConnection.java:260)
+	at org.seleniumhq.jetty9.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305)
+	at org.seleniumhq.jetty9.io.FillInterest.fillable(FillInterest.java:103)
+	at org.seleniumhq.jetty9.io.ChannelEndPoint$2.run(ChannelEndPoint.java:118)
+	at org.seleniumhq.jetty9.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:333)
+	at org.seleniumhq.jetty9.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:310)
+	at org.seleniumhq.jetty9.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:168)
+	at org.seleniumhq.jetty9.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:126)
+	at org.seleniumhq.jetty9.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:366)
+	at org.seleniumhq.jetty9.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:765)
+	at org.seleniumhq.jetty9.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:683)
+	at java.base/java.lang.Thread.run(Thread.java:829)

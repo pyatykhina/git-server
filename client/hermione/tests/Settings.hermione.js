@@ -16,5 +16,3 @@ describe("Settings form", () => {
     })
 
 }) 
-
-// ./node_modules/.bin/hermione gui src/pages/Settings/Settings.hermione.js \ > --retry 2

@@ -1,4 +1,10 @@
+const fs = require('fs');
+const{ spawn } = require('child_process');
+const delay = require('delay');
+
 module.exports = (hermione) => {
+    let selenium; 
+
     hermione.on(hermione.events.RUNNER_START, async () => {
         const file = fs.openSync("selenium.log", "w");
 
