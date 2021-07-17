@@ -20,7 +20,7 @@
   },
   "scripts": {
     "start": "PORT=3001 react-scripts start",
-    "build": "react-scripts build",
+    "build": "react-app-rewired build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "hermione": "./node_modules/.bin/hermione gui --retry 2"
@@ -46,6 +46,7 @@
   "devDependencies": {
     "assert": "^1.5.0",
     "hermione": "^4.0.0-alpha.9",
-    "html-reporter": "^7.0.2"
+    "html-reporter": "^7.0.2",
+    "react-app-rewired": "^2.1.8"
   }
 }
