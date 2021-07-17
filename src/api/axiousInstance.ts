@@ -1,6 +1,6 @@
-const axios = require('axios');
+import axios from 'axios';
 
-module.exports = function getAxiosInstance() {
+export default function getAxiosInstance() {
     return axios.create({
         baseURL: 'https://shri.yandex/hw/api',
         withCredentials: true,

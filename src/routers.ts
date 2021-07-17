@@ -1,11 +1,11 @@
-const express = require('express');
-const { createProxyMiddleware } = require('http-proxy-middleware');
-const path = require('path');
+import express from 'express';
+import { createProxyMiddleware } from 'http-proxy-middleware';
+import path from 'path';
 
-const api = require('./controllers/api');
-const ping = require('./controllers/ping');
+import api from './controllers/api';
+import ping from './controllers/ping';
 
-const apiRouter = new express.Router();
+const apiRouter = new (express.Router as any)();
 
 apiRouter.get('/settings', api.getSettings);
 apiRouter.post('/settings', api.setSettings);
@@ -14,9 +14,7 @@ apiRouter.post('/builds/:commitHash', api.addBuildToQueue);
 apiRouter.get('/builds/:buildId', api.getBuild);
 apiRouter.get('/builds/:buildId/logs', api.getLogs);
 
-exports.apiRouter = apiRouter;
-
-const mainRouter = new express.Router();
+const mainRouter = new (express.Router as any)();
 
 mainRouter.get('/ping', ping);
 mainRouter.use(
@@ -29,4 +27,4 @@ mainRouter.use(
       })
 );
 
-exports.mainRouter = mainRouter;
+export { apiRouter, mainRouter };

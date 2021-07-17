@@ -1,6 +1,7 @@
-const api = require('../../api/api');
+import api from '../../api/api';
+import { Request, Response } from "express";
 
-module.exports = async (req, res) => {
+export default async (req: Request, res: Response) => {
     const buildId = req.originalUrl.split('/')[3];
 
     await api.getBuild(buildId)
@@ -11,8 +12,8 @@ module.exports = async (req, res) => {
         })
         .catch(error => {
             return res.status(error.response.status).json({ 
-                    error: error.response.statusText 
-                })
+                error: error.response.statusText 
+            })
         });
 };
   

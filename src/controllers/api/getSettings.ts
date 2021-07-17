@@ -1,8 +1,9 @@
-const api = require('../../api/api');
-const db = require('../../db/database');
-const Settings = require('../../db/Settings');
+import api from '../../api/api';
+import db from '../../db/database';
+import Settings from '../../db/Settings';
+import { Request, Response } from "express";
 
-module.exports = async (req, res) => {
+export default async (req: Request, res: Response) => {
     await api.getSettings()
         .then(async response => {
             const settingsFile = new Settings(response.data);

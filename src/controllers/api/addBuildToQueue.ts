@@ -1,8 +1,9 @@
-const api = require('../../api/api');
-const{ exec, execSync } = require('child_process');
-const serialize = require('serialize-javascript');
+import api from '../../api/api';
+import { exec, execSync } from 'child_process';
+import serialize from 'serialize-javascript';
+import { Request, Response } from "express";
 
-module.exports = async (req, res) => {
+export default async (req: Request, res: Response) => {
     const commitHash = req.params.commitHash;
 
     const commit = execSync(`
@@ -10,7 +11,7 @@ module.exports = async (req, res) => {
         git log --oneline --pretty=format:"%H, %an, %s"
     `, {
         encoding: 'utf8'
-    }).split('\n').find(e => e.includes(commitHash)).split(', ');
+    }).split('\n').find(e => e.includes(commitHash))?.split(', ') || [];
 
     const branch = execSync(`
         cd local-repo
@@ -20,10 +21,10 @@ module.exports = async (req, res) => {
     }).split('\n')[0];
 
     const config = {
-        commitMessage: commit[2],
+        commitMessage: commit[2] || "",
         commitHash: commitHash,
         branchName: branch,
-        authorName: commit[1],
+        authorName: commit[1] || "",
         start: new Date().toISOString(),
         duration: 0
     };
@@ -46,7 +47,7 @@ module.exports = async (req, res) => {
     }
 };
 
-const execBuild = async ({ buildId, dateTime }) => {
+const execBuild = async ({ buildId, dateTime }: { buildId: string, dateTime: string }) => {
     const settings = await api.getSettings();
     const buildCommand = settings.data.buildCommand;
     const mainBranch = settings.data.mainBranch;
@@ -60,7 +61,7 @@ const execBuild = async ({ buildId, dateTime }) => {
             if (error) {
                 await api.finishBuild({
                     buildId: buildId,
-                    duration: new Date() - new Date(dateTime) + new Date().getTimezoneOffset()*60*1000,
+                    duration: Date.now() - (+new Date(dateTime)) + new Date().getTimezoneOffset()*60*1000,
                     success: false,
                     buildLog: serialize({logs: `<div>{${stderr} + \n + ${stdout}}</div>`})
                 })
@@ -69,7 +70,7 @@ const execBuild = async ({ buildId, dateTime }) => {
 
             await api.finishBuild({
                 buildId: buildId,
-                duration: new Date() - new Date(dateTime) + new Date().getTimezoneOffset()*60*1000,
+                duration: Date.now() - (+new Date(dateTime)) + new Date().getTimezoneOffset()*60*1000,
                 success: true,
                 buildLog: serialize({logs: JSON.stringify(stdout)})
             })

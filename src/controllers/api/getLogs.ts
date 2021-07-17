@@ -1,8 +1,9 @@
-const api = require('../../api/api');
-var Convert = require('ansi-to-html');
-var convert = new Convert({ bg: '#fff', fg: '#000' });
+import api from '../../api/api';
+import { Request, Response } from "express";
+import Convert from 'ansi-to-html';
+const convert = new Convert({ bg: '#fff', fg: '#000' });
 
-module.exports = async (req, res) => {
+export default async (req: Request, res: Response) => {
     const buildId = req.originalUrl.split('/')[3];
 
     await api.getLogs(buildId)
@@ -12,7 +13,6 @@ module.exports = async (req, res) => {
             })
         ))
         .catch(error => {
-            console.log(error)
             return res.status(error.response.status).json({ 
                     error: error.response.statusText 
                 })

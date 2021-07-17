@@ -1,10 +1,10 @@
 require('dotenv').config();
-const http = require('http');
-const express = require('express');
-const { PORT } = require('./config');
-const bodyParser = require('body-parser');
-const cors = require('cors');
-const { apiRouter, mainRouter } = require('./routers');
+import http from 'http';
+import express from 'express';
+import { PORT } from './config';
+import bodyParser from 'body-parser';
+import cors from 'cors';
+import { apiRouter, mainRouter } from './routers';
 
 const app = express();
 

@@ -1,7 +1,8 @@
-const api = require('../../api/api');
-const{ execSync } = require('child_process');
+import api from '../../api/api';
+import { execSync } from 'child_process';
+import { Request, Response } from "express";
 
-module.exports = async (req, res) => {
+export default async (req: Request, res: Response) => {
     const config = {
         repoName: req.body.repoName,
         buildCommand: req.body.buildCommand,
