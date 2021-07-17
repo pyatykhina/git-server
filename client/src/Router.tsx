@@ -14,6 +14,7 @@ function Router() {
 
   useEffect(() => {
     dispatch(getSettings());
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const repository = useSelector(state => state.settings);

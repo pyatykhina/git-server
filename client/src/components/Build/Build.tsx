@@ -10,7 +10,7 @@ import author from "../../assets/images/author.svg";
 import calendar from "../../assets/images/calendar.svg";
 import watch from "../../assets/images/watch.svg";
 
-function Build({ variant, buildNumber, commitMessage, branchName, commitHash, authorName, status, start, duration }) {
+function Build({ variant, buildNumber, commitMessage, branchName, commitHash, authorName, status, start, duration }: IBuild) {
     return (
         <>
             <li className="build">
@@ -68,3 +68,15 @@ function Build({ variant, buildNumber, commitMessage, branchName, commitHash, au
 }
 
 export default Build;
+
+interface IBuild {
+    variant?: "opened", 
+    buildNumber: number, 
+    commitMessage: string, 
+    branchName: string, 
+    commitHash: string, 
+    authorName: string, 
+    status: "Waiting" | "InProgress" | "Success" | "Fail" | "Canceled", 
+    start: string, 
+    duration: number
+}

@@ -12,7 +12,7 @@ export const initialState = {
     logs: ""
 };
 
-const rootReducer = (state = initialState, action) => {
+const rootReducer = (state = initialState, action: any) => {
     switch (action.type) {
         case SET_SETTINGS:
             return {

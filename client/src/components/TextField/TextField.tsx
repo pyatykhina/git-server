@@ -3,24 +3,24 @@ import "./TextField.scss";
 
 import clear from "../../assets/images/clear.svg"
 
-const TextField = ({ label, placeholder, required, variant, initialValue, ...props }) => {
+const TextField = ({ label, placeholder, required, variant, initialValue, ...props }: ITextField) => {
     const [inputValue, setInputValue] = useState("");
 
     useEffect(() => {
         initialValue && setInputValue(initialValue);
     }, [initialValue])
 
-    const changeInput = e => {   
+    const changeInput = (e: React.ChangeEvent<HTMLInputElement>) => {   
         e.target.classList.remove("textfield__input-error");
         variant === "inline" && setInputValue(validateNumberInput(e.target.value));
         variant !== "inline" && setInputValue(e.target.value);
     }
 
-    const validateNumberInput = value => {
+    const validateNumberInput = (value: string) => {
         return value.replace(/\s/g, '').replace(/[^\d]/g, '').substr(0,6) || '';
     }
 
-    const clearInput = e => {
+    const clearInput = (e: React.MouseEvent) => {
         e.preventDefault();
         setInputValue("");
     }
@@ -47,3 +47,12 @@ const TextField = ({ label, placeholder, required, variant, initialValue, ...pro
 }
 
 export default TextField;
+
+interface ITextField {
+    label?: string, 
+    placeholder?: string, 
+    required?: "true", 
+    variant?: "inline", 
+    initialValue?: string,
+    [otherOptions: string]: unknown;
+}

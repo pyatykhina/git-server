@@ -5,8 +5,9 @@ import {
     setBuild,
     setLogs
 } from "../actions";
+import { Dispatch } from 'redux';
 
-export const getSettings = () => dispatch => {
+export const getSettings = () => (dispatch: Dispatch) => {
     return api
         .getSettings()
         .then(data => {
@@ -18,11 +19,11 @@ export const getSettings = () => dispatch => {
         });
 }
 
-export const editSettings = config => dispatch => {
+export const editSettings = (config: object) => (dispatch: Dispatch) => {
     return api
         .editSettings(config)
         .then(data => {
-            data.status !== 500 && dispatch(getSettings());
+            data.status !== 500 && dispatch(getSettings() as any);
             return data;
         })
         .catch(error => {
@@ -30,7 +31,7 @@ export const editSettings = config => dispatch => {
         });
 }
 
-export const getAllBuilds = (offset = 0, limit = 25) => dispatch => {
+export const getAllBuilds = (offset = 0, limit = 25) => (dispatch: Dispatch) => {
     return api
         .getAllBuilds(offset, limit)
         .then(data => {
@@ -42,7 +43,7 @@ export const getAllBuilds = (offset = 0, limit = 25) => dispatch => {
         });
 }
 
-export const getBuild = buildId => dispatch => {
+export const getBuild = (buildId: string) => (dispatch: Dispatch) => {
     return api
         .getBuild(buildId)
         .then(data => {
@@ -54,11 +55,11 @@ export const getBuild = buildId => dispatch => {
         });
 }
 
-export const addBuildToQueue = commitHash => dispatch => {
+export const addBuildToQueue = (commitHash: string) => (dispatch: Dispatch) => {
     return api
         .addBuildToQueue(commitHash)
         .then(data => {
-            dispatch(getAllBuilds());
+            dispatch(getAllBuilds() as any);
             return data;
         })
         .catch(error => {
@@ -66,7 +67,7 @@ export const addBuildToQueue = commitHash => dispatch => {
         });
 }
 
-export const getLogs = buildId => dispatch => {
+export const getLogs = (buildId: string) => (dispatch: Dispatch) => {
     return api
         .getLogs(buildId)
         .then(data => {

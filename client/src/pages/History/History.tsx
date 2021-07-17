@@ -18,6 +18,7 @@ function History() {
 
     useEffect(() => {
         allBuilds.length === 0 && dispatch(getAllBuilds());
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
 
     const openNewBuildPopup = () => {
@@ -43,7 +44,7 @@ function History() {
                     <Link to="/settings"><IconButton icon="settings" /></Link>
                 </div>
             </header>
-            {allBuilds?.map(build => (
+            {allBuilds?.map((build: IBuild) => (
                 <Link to={`/build/${build.id}`} key={build.buildNumber}>
                     <Build 
                         buildNumber={build.buildNumber}
@@ -65,3 +66,16 @@ function History() {
 }
 
 export default History;
+
+interface IBuild {
+    id?: string,
+    configurationId?: string,
+    buildNumber: number,
+    commitMessage: string,
+    commitHash: string,
+    branchName: string,
+    authorName: string,
+    status: "Waiting" | "InProgress" | "Success" | "Fail" | "Canceled",
+    start: string,
+    duration: number,
+}

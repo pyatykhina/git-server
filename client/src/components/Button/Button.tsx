@@ -1,7 +1,7 @@
 import React from "react";
 import "./Button.scss";
 
-const Button = ({ variant, title, ...props}) => {
+const Button = ({ variant, title, ...props}: IButton) => {
     return (
         <button className={`button ${variant || "primary"}`} {...props}>
             {title}
@@ -10,3 +10,9 @@ const Button = ({ variant, title, ...props}) => {
 }
 
 export default Button;
+
+interface IButton {
+    variant?: "primary" | "secondary", 
+    title: string,
+    [otherOptions: string]: unknown;
+}

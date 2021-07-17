@@ -3,4 +3,4 @@
 local-repo/
 .env
 /data/builds/*
-/dist
+dist/

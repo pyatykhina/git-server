@@ -13,7 +13,7 @@ export const api = {
             .catch(error => error.response);
     },
 
-    editSettings(config) {
+    editSettings(config: object) {
         return axios
             .post("/api/settings", config)
             .then(response => {
@@ -24,7 +24,7 @@ export const api = {
             .catch(error => error.response);
     },
 
-    getAllBuilds(offset, limit) {
+    getAllBuilds(offset: number, limit: number) {
         return axios
             .get(`/api/builds?offset=${offset}&limit=${limit}`)
             .then(response => {
@@ -35,7 +35,7 @@ export const api = {
             .catch(error => error.response);
     },
 
-    addBuildToQueue(commitHash) {
+    addBuildToQueue(commitHash: string) {
         return axios
             .post(`/api/builds/${commitHash}`)
             .then(response => {
@@ -46,7 +46,7 @@ export const api = {
             .catch(error => error.response);
     },
 
-    getBuild(buildId) {
+    getBuild(buildId: string) {
         return axios
             .get(`/api/builds/${buildId}`)
             .then(response => {
@@ -57,7 +57,7 @@ export const api = {
             .catch(error => error.response);
     },
 
-    getLogs(buildId) {
+    getLogs(buildId: string) {
         return axios
             .get(`/api/builds/${buildId}/logs`)
             .then(response => {

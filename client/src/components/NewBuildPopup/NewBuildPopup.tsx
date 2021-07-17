@@ -2,20 +2,20 @@ import React from "react";
 import { useHistory } from "react-router-dom";
 import "./NewBuildPopup.scss";
 import { addBuildToQueue } from "../../redux/middlewares";
-import { useDispatch } from "react-redux";
+import { useAppThunkDispatch } from "../../redux/store";
 
 import TextField from "../../components/TextField";
 import Button from "../../components/Button";
 
-const NewBuildPopup = props => {
-    const dispatch = useDispatch();
+const NewBuildPopup = (props: {onClose: () => void}) => {
+    const dispatch = useAppThunkDispatch();
     const history = useHistory();
 
-    const runBuild = e => {
+    const runBuild = (e: React.ChangeEvent<HTMLFormElement>) => {
         e.preventDefault();
         const inputs = document.getElementsByClassName("textfield__input");
         dispatch(addBuildToQueue(inputs["commitHash"].value))
-            .then(buildId => buildId && history.push(`/build/${buildId}`));
+            .then((buildId: string) => buildId && history.push(`/build/${buildId}`));
     }
 
     return (

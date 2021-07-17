@@ -1,19 +1,21 @@
 import React, { useEffect } from "react";
 import { Link, useHistory } from "react-router-dom";
 import "./Details.scss";
-import { useDispatch, useSelector } from "react-redux";
+import { useSelector } from "react-redux";
+import { useAppThunkDispatch } from "../../redux/store";
 import { getBuild, getLogs, addBuildToQueue } from "../../redux/middlewares";
 
 import IconButton from "../../components/IconButton";
 import Build from "../../components/Build";
 
-function Details(props) {
-    const dispatch = useDispatch();
+function Details(props: {match: {params: {id: string}}}) {
+    const dispatch = useAppThunkDispatch();
     const history = useHistory();
 
     useEffect(() => {
         dispatch(getBuild(props.match.params.id));
         dispatch(getLogs(props.match.params.id));
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [props.match.params.id])
 
     const repoName = useSelector(state => state.settings.repoName);
@@ -22,7 +24,7 @@ function Details(props) {
 
     const rebuildCommit = () => {
         dispatch(addBuildToQueue(build.commitHash))
-            .then(buildId => buildId && history.push(`/build/${buildId}`));
+            .then((buildId: string) => buildId && history.push(`/build/${buildId}`));
     }
 
     return (
